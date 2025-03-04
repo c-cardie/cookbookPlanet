@@ -1,7 +1,7 @@
 // Function to fetch JSON and display a specific object by its ID
 function fetchJSONAndDisplayObject(id) {
     // Fetch the JSON file (assuming it's in the same directory as this HTML file)
-    fetch('/static/recipe/merged_sorted.json')  // Specify the path to your JSON file
+    fetch('../static/recipe/merged_sorted.json')  // Specify the path to your JSON file
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -17,7 +17,7 @@ function fetchJSONAndDisplayObject(id) {
                 // Display recipe information in the container
                 container.innerHTML = `
                     <div class="card">
-                    <img src="/static/images/${foundObject.images.slice(0, 1)[0]}" class="card-img-top w-25" alt="${foundObject.name}">
+                    <img src="../static/images/${foundObject.images.slice(0, 1)[0]}" class="card-img-top w-25" alt="${foundObject.name}">
                     <div class="card-body">
                         <h5 class="card-title">${foundObject.name}</h5>
                         <p class="card-text"><strong>Prep Time:</strong> ${foundObject.prep_time}</p>
