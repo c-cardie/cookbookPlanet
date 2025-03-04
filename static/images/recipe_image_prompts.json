@@ -1,0 +1,112 @@
+[
+    {
+        "id": 76,
+        "recipe_name": "Bruschetta with Tomato and Basil",
+        "images": [
+            {
+                "file_name": "bruschetta_1.jpg",
+                "prompt": "A perfectly plated Bruschetta with Tomato and Basil on a white plate, featuring toasted baguette slices topped with diced tomatoes, fresh basil, and a drizzle of balsamic glaze. The dish is garnished with a sprig of basil and presented on a wooden table."
+            },
+            {
+                "file_name": "bruschetta_2.jpg",
+                "prompt": "A vibrant arrangement of fresh ingredients for Bruschetta with Tomato and Basil: diced tomatoes, fresh basil leaves, whole garlic cloves, a sliced baguette, olive oil in a small bowl, and a bottle of balsamic glaze, all displayed on a rustic wooden table."
+            },
+            {
+                "file_name": "bruschetta_3.jpg",
+                "prompt": "A close-up of the preparation process for Bruschetta with Tomato and Basil: diced tomatoes being mixed with minced garlic, chopped fresh basil, olive oil, and a pinch of salt in a glass bowl, with a wooden spoon stirring the mixture."
+            },
+            {
+                "file_name": "bruschetta_4.jpg",
+                "prompt": "A detailed shot of the Bruschetta preparation: toasted baguette slices being topped with the tomato and basil mixture using a spoon, with a drizzle of balsamic glaze in progress, all on a wooden cutting board."
+            }
+        ]
+    },
+    {
+        "id": 77,
+        "recipe_name": "Stuffed Mushrooms",
+        "images": [
+            {
+                "file_name": "stuffed_mushrooms_1.jpg",
+                "prompt": "A beautifully plated serving of Stuffed Mushrooms on a white dish, featuring large mushroom caps filled with a creamy mixture of cheese, breadcrumbs, garlic, and herbs, garnished with parsley. The background includes a rustic wooden table."
+            },
+            {
+                "file_name": "stuffed_mushrooms_2.jpg",
+                "prompt": "An overhead view of ingredients for Stuffed Mushrooms: large whole mushrooms, cream cheese, grated parmesan cheese, breadcrumbs, minced garlic, and fresh parsley. The ingredients are displayed on a rustic wooden table."
+            },
+            {
+                "file_name": "stuffed_mushrooms_3.jpg",
+                "prompt": "A detailed view of the Stuffed Mushrooms preparation process: mushroom caps being filled with a mixture of cream cheese, breadcrumbs, garlic, and parmesan cheese, with a spoon scooping the filling into the caps on a baking sheet."
+            },
+            {
+                "file_name": "stuffed_mushrooms_4.jpg",
+                "prompt": "A close-up view of Stuffed Mushrooms baking in the oven on a parchment-lined baking sheet. The cheese and breadcrumbs on top are turning golden brown, with light steam rising to indicate they are nearly ready."
+            }
+        ]
+    },
+    {
+        "id": 78,
+        "recipe_name": "Caprese Skewers",
+        "images": [
+            {
+                "file_name": "caprese_skewers_1.jpg",
+                "prompt": "A beautifully arranged plate of Caprese Skewers, featuring cherry tomatoes, mozzarella balls, and fresh basil leaves threaded on skewers, drizzled with olive oil and balsamic glaze, served on a white platter."
+            },
+            {
+                "file_name": "caprese_skewers_2.jpg",
+                "prompt": "A vibrant arrangement of fresh ingredients for Caprese Skewers: cherry tomatoes, mozzarella balls, fresh basil leaves, olive oil in a small bowl, and a bottle of balsamic glaze, all displayed on a wooden table."
+            },
+            {
+                "file_name": "caprese_skewers_3.jpg",
+                "prompt": "A close-up of the assembly process for Caprese Skewers: cherry tomatoes, mozzarella balls, and fresh basil leaves being threaded onto skewers, with a hand placing a basil leaf onto the skewer."
+            },
+            {
+                "file_name": "caprese_skewers_4.jpg",
+                "prompt": "A detailed view of Caprese Skewers being garnished: a hand drizzling balsamic glaze over skewers of cherry tomatoes, mozzarella balls, and basil leaves, arranged on a white platter."
+            }
+        ]
+    },
+    {
+        "id": 79,
+        "recipe_name": "Deviled Eggs with Bacon",
+        "images": [
+            {
+                "file_name": "deviled_eggs_bacon_1.jpg",
+                "prompt": "A beautifully plated dish of Deviled Eggs with Bacon on a white serving tray, featuring halved eggs filled with a creamy yolk mixture, topped with crumbled crispy bacon and a sprinkle of paprika. The dish is garnished with parsley leaves."
+            },
+            {
+                "file_name": "deviled_eggs_bacon_2.jpg",
+                "prompt": "An overhead view of ingredients for Deviled Eggs with Bacon: hard-boiled eggs, crispy bacon slices, mayonnaise, mustard, paprika, and parsley leaves, all displayed on a wooden cutting board."
+            },
+            {
+                "file_name": "deviled_eggs_bacon_3.jpg",
+                "prompt": "A close-up view of the preparation process for Deviled Eggs with Bacon: yolks being scooped out of halved boiled eggs into a mixing bowl, with a hand holding a spoon. Crispy bacon slices are visible in the background."
+            },
+            {
+                "file_name": "deviled_eggs_bacon_4.jpg",
+                "prompt": "A detailed view of Deviled Eggs with Bacon being garnished: a hand sprinkling crispy bacon crumbles and paprika onto halved boiled eggs filled with creamy yolk mixture, arranged neatly on a white tray."
+            }
+        ]
+    },
+    {
+        "id": 80,
+        "recipe_name": "Spinach and Artichoke Dip",
+        "images": [
+            {
+                "file_name": "spinach_artichoke_dip_1.jpg",
+                "prompt": "A beautifully plated bowl of creamy Spinach and Artichoke Dip, topped with melted cheese and garnished with fresh parsley, surrounded by tortilla chips on a rustic wooden table."
+            },
+            {
+                "file_name": "spinach_artichoke_dip_2.jpg",
+                "prompt": "An overhead view of ingredients for Spinach and Artichoke Dip: fresh spinach leaves, marinated artichoke hearts, cream cheese, grated parmesan cheese, minced garlic, and sour cream, all displayed on a wooden surface."
+            },
+            {
+                "file_name": "spinach_artichoke_dip_3.jpg",
+                "prompt": "A close-up view of the preparation process for Spinach and Artichoke Dip: a hand mixing chopped spinach, diced artichoke hearts, cream cheese, sour cream, parmesan cheese, and minced garlic in a large mixing bowl."
+            },
+            {
+                "file_name": "spinach_artichoke_dip_4.jpg",
+                "prompt": "A close-up view of Spinach and Artichoke Dip baking in the oven in a casserole dish, with the cheese on top bubbling and turning golden brown."
+            }
+        ]
+    }
+]

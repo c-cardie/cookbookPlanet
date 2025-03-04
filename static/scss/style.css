@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+html {
+  height: 100%;
+}
+
+#entire-page {
+  top: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(27, 64%, 89%);
+}
+
+#footer-bottom {
+  margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+#header {
+  height: 10vh;
+  background-color: white;
+}
+#header .h1 {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#navy {
+  width: 98%;
+}
+
+#nav-container {
+  background-color: hsl(27, 64%, 89%);
+}
+
+.navbar-light {
+  background-color: hsl(27, 64%, 89%) !important;
+  border: none !important;
+  border-width: 0 !important;
+}
+
+#nav-list li {
+  justify-content: space-evenly;
+}
+
+@media (max-width: 991px) {
+  #moto {
+    display: none;
+  }
+  #logo-container {
+    width: 100%;
+    justify-content: center;
+  }
+  #navy {
+    width: 100%;
+    margin: 0 !important;
+  }
+  #nav-list {
+    margin: 0px;
+  }
+  .navbar-brand {
+    display: none !important;
+  }
+  #nav-home {
+    visibility: visible !important;
+  }
+  .navbar-collapse {
+    height: 100vh !important;
+    width: 100vw !important;
+    background-color: hsl(27, 64%, 89%);
+    position: fixed;
+    top: 0 !important;
+    left: 0 !important;
+  }
+  .navbar-collapse .navbar-toggler {
+    visibility: visible !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Image</title>
+</head>
+<body>
+    <h1>Find and Display Image</h1>
+
+    <!-- Input to select an image -->
+    <input type="file" id="imageInput" accept="image/*">
+    
+    <br><br>
+
+    <!-- Section to display the image -->
+    <div id="imageContainer">
+        <img id="image" src="" alt="Selected Image" style="max-width: 100%; height: auto; display: none;">
+    </div>
+
+    <script>
+        // Function to display the selected image
+        document.getElementById('imageInput').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const imageElement = document.getElementById('image');
+                    imageElement.src = e.target.result;
+                    imageElement.style.display = 'block'; // Display image after it is loaded
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+</body>
+</html>

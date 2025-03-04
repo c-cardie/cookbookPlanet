@@ -1,0 +1,474 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Pancakes",
+    "category": "Breakfast",
+    "ingredients": [
+      "flour",
+      "milk",
+      "eggs",
+      "sugar",
+      "baking powder"
+    ],
+    "dietary": [
+      "Vegetarian"
+    ],
+    "season": "All",
+    "cuisine": "American",
+    "prep_time": "20 min",
+    "difficulty": "Easy",
+    "images": [
+      "classic_pancakes_1.jpg",
+      "classic_pancakes_2.jpg"
+    ],
+    "steps": [
+      "In a large mixing bowl, combine flour, sugar, and baking powder.",
+      "Create a well in the center and pour in milk and eggs.",
+      "Whisk the mixture together until it forms a smooth batter.",
+      "Heat a non-stick skillet over medium heat and lightly grease with butter.",
+      "Pour 1/4 cup of batter onto the skillet for each pancake.",
+      "Cook until bubbles form on the surface and the edges look set, about 2-3 minutes.",
+      "Flip the pancake and cook the other side until golden brown, about 1-2 minutes.",
+      "Serve warm with maple syrup, fresh fruit, or your favorite toppings."
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Spinach and Feta Omelette",
+    "category": "Breakfast",
+    "ingredients": [
+      "eggs",
+      "spinach",
+      "feta cheese",
+      "salt",
+      "pepper"
+    ],
+    "dietary": [
+      "Vegetarian"
+    ],
+    "season": "All",
+    "cuisine": "American",
+    "prep_time": "15 min",
+    "difficulty": "Easy",
+    "images": [
+      "spinach_omelette_1.jpg"
+    ],
+    "steps": [
+      "In a small bowl, whisk eggs with a pinch of salt and pepper.",
+      "Heat a non-stick skillet over medium heat and add a small amount of olive oil.",
+      "Add spinach to the skillet and sauté until wilted, about 2 minutes.",
+      "Pour the whisked eggs over the spinach, tilting the skillet to spread evenly.",
+      "Crumble feta cheese over one side of the omelette.",
+      "Cook until the eggs are mostly set, about 3-4 minutes.",
+      "Fold the omelette in half and cook for an additional minute.",
+      "Slide onto a plate and serve hot."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Banana Oatmeal Smoothie",
+    "category": "Breakfast",
+    "ingredients": [
+      "banana",
+      "oats",
+      "milk",
+      "honey",
+      "vanilla"
+    ],
+    "dietary": [
+      "Vegetarian",
+      "Gluten-Free"
+    ],
+    "season": "All",
+    "cuisine": "American",
+    "prep_time": "5 min",
+    "difficulty": "Easy",
+    "images": [
+      "banana_smoothie_1.jpg",
+      "banana_smoothie_2.jpg"
+    ],
+    "steps": [
+      "Peel the banana and add it to a blender.",
+      "Add oats, milk, honey, and vanilla extract to the blender.",
+      "Blend on high speed until the mixture is smooth and creamy.",
+      "Taste and adjust sweetness by adding more honey if needed.",
+      "Pour the smoothie into a glass and serve immediately."
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Avocado Toast with Poached Egg",
+    "category": "Breakfast",
+    "ingredients": [
+      "bread",
+      "avocado",
+      "eggs",
+      "salt",
+      "pepper"
+    ],
+    "dietary": [
+      "Vegetarian"
+    ],
+    "season": "All",
+    "cuisine": "American",
+    "prep_time": "10 min",
+    "difficulty": "Easy",
+    "images": [
+      "avocado_toast_1.jpg",
+      "avocado_toast_2.jpg"
+    ],
+    "steps": [
+      "Toast slices of bread in a toaster or under the broiler until golden brown.",
+      "Cut the avocado in half, remove the pit, and scoop the flesh into a bowl.",
+      "Mash the avocado with a fork until smooth, then season with salt and pepper.",
+      "Spread the mashed avocado evenly over the toasted bread.",
+      "Bring a pot of water to a gentle simmer and add a splash of vinegar.",
+      "Crack an egg into a small bowl and gently slide it into the simmering water.",
+      "Poach the egg for 3-4 minutes, until the whites are set but the yolk is still runny.",
+      "Remove the egg with a slotted spoon and place it on top of the avocado toast.",
+      "Sprinkle with additional salt and pepper, and serve immediately."
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Blueberry Muffins",
+    "category": "Breakfast",
+    "ingredients": [
+      "flour",
+      "blueberries",
+      "milk",
+      "eggs",
+      "baking powder"
+    ],
+    "dietary": [
+      "Vegetarian"
+    ],
+    "season": "All",
+    "cuisine": "American",
+    "prep_time": "25 min",
+    "difficulty": "Moderate",
+    "images": [
+      "blueberry_muffins_1.jpg",
+      "blueberry_muffins_2.jpg",
+      "blueberry_muffins_3.jpg"
+    ],
+    "steps": [
+      "Preheat the oven to 375°F (190°C) and grease a muffin tin or line with paper liners.",
+      "In a mixing bowl, combine flour, sugar, baking powder, and a pinch of salt.",
+      "In a separate bowl, whisk together milk, eggs, and melted butter.",
+      "Gradually add the wet ingredients to the dry ingredients, stirring until just combined.",
+      "Gently fold in the blueberries, being careful not to overmix.",
+      "Spoon the batter into the prepared muffin tin, filling each cup about 2/3 full.",
+      "Bake for 20-25 minutes, or until a toothpick inserted into the center comes out clean.",
+      "Allow the muffins to cool in the tin for 5 minutes, then transfer to a wire rack to cool completely.",
+      "Serve warm or store in an airtight container for up to 3 days."
+    ]
+  },
+  {
+    "id": 6,
+    "name": "French Toast with Maple Syrup",
+    "category": "Breakfast",
+    "ingredients": [
+      "bread",
+      "eggs",
+      "milk",
+      "vanilla",
+      "cinnamon"
+    ],
+    "dietary": [
+      "Vegetarian"
+    ],
+    "season": "All",
+    "cuisine": "American",
+    "prep_time": "20 min",
+    "difficulty": "Easy",
+    "images": [
+      "french_toast_1.jpg",
+      "french_toast_2.jpg"
+    ],
+    "steps": [
+      "In a shallow dish, whisk together eggs, milk, vanilla extract, and cinnamon.",
+      "Heat a skillet or griddle over medium heat and lightly grease with butter.",
+      "Dip each slice of bread into the egg mixture, coating both sides.",
+      "Place the soaked bread on the skillet and cook for 2-3 minutes on each side, or until golden brown.",
+      "Serve hot with maple syrup, powdered sugar, or fresh fruit."
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Greek Yogurt Parfait with Granola and Berries",
+    "category": "Breakfast",
+    "ingredients": [
+      "Greek yogurt",
+      "granola",
+      "berries",
+      "honey"
+    ],
+    "dietary": [
+      "Vegetarian",
+      "Gluten-Free"
+    ],
+    "season": "All",
+    "cuisine": "Mediterranean",
+    "prep_time": "5 min",
+    "difficulty": "Easy",
+    "images": [
+      "yogurt_parfait_1.jpg"
+    ],
+    "steps": [
+      "In a tall glass or bowl, layer Greek yogurt, granola, and berries.",
+      "Repeat the layers until the glass is full, finishing with a layer of berries on top.",
+      "Drizzle with honey and serve immediately."
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Breakfast Burrito with Scrambled Eggs and Salsa",
+    "category": "Breakfast",
+    "ingredients": [
+      "tortilla",
+      "eggs",
+      "cheese",
+      "salsa",
+      "bell peppers"
+    ],
+    "dietary": [
+      "Vegetarian"
+    ],
+    "season": "All",
+    "cuisine": "Mexican",
+    "prep_time": "15 min",
+    "difficulty": "Easy",
+    "images": [
+      "breakfast_burrito_1.jpg",
+      "breakfast_burrito_2.jpg"
+    ],
+    "steps": [
+      "Whisk eggs in a bowl and season with salt and pepper.",
+      "Heat a skillet over medium heat and lightly grease with butter or oil.",
+      "Scramble the eggs until cooked, about 3 minutes.",
+      "Warm the tortilla in the skillet for 1-2 minutes.",
+      "Fill the tortilla with scrambled eggs, cheese, salsa, and sautéed bell peppers.",
+      "Roll the tortilla tightly and serve warm."
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Vegan Tofu Scramble",
+    "category": "Breakfast",
+    "ingredients": [
+      "tofu",
+      "turmeric",
+      "bell peppers",
+      "onions",
+      "spinach"
+    ],
+    "dietary": [
+      "Vegan",
+      "Gluten-Free"
+    ],
+    "season": "All",
+    "cuisine": "American",
+    "prep_time": "15 min",
+    "difficulty": "Easy",
+    "images": [
+      "tofu_scramble_1.jpg"
+    ],
+    "steps": [
+      "Heat oil in a skillet over medium heat.",
+      "Crumble tofu into the skillet and sprinkle with turmeric.",
+      "Add diced bell peppers and onions, and sauté for 5 minutes.",
+      "Stir in spinach and cook until wilted.",
+      "Season with salt and pepper, and serve."
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Sausage and Egg Breakfast Casserole",
+    "category": "Breakfast",
+    "ingredients": [
+      "sausage",
+      "eggs",
+      "milk",
+      "bread",
+      "cheese"
+    ],
+    "dietary": [],
+    "season": "All",
+    "cuisine": "American",
+    "prep_time": "40 min",
+    "difficulty": "Moderate",
+    "images": [
+      "breakfast_casserole_1.jpg",
+      "breakfast_casserole_2.jpg"
+    ],
+    "steps": [
+      "Preheat the oven to 375°F (190°C) and grease a baking dish.",
+      "Cook sausage in a skillet over medium heat until browned, then set aside.",
+      "In a large bowl, whisk together eggs, milk, salt, and pepper.",
+      "Layer bread cubes in the greased baking dish, followed by cooked sausage and shredded cheese.",
+      "Pour the egg mixture over the layers, ensuring even coverage.",
+      "Bake for 30-35 minutes, or until the top is golden and the casserole is set.",
+      "Let cool for 5 minutes before serving."
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Peanut Butter and Banana Toast",
+    "category": "Breakfast",
+    "ingredients": [
+      "bread",
+      "peanut butter",
+      "banana",
+      "honey"
+    ],
+    "dietary": [
+      "Vegetarian"
+    ],
+    "season": "All",
+    "cuisine": "American",
+    "prep_time": "5 min",
+    "difficulty": "Easy",
+    "images": [
+      "pb_banana_toast_1.jpg",
+      "pb_banana_toast_2.jpg",
+      "pb_banana_toast_3.jpg"
+    ],
+    "steps": [
+      "Toast the bread slices in a toaster or under the broiler until golden brown.",
+      "Spread a generous layer of peanut butter on each slice of toast.",
+      "Slice the banana into thin rounds and place them evenly on top of the peanut butter.",
+      "Drizzle with honey for extra sweetness.",
+      "Serve immediately."
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Scrambled Eggs with Smoked Salmon",
+    "category": "Breakfast",
+    "ingredients": [
+      "eggs",
+      "milk",
+      "butter",
+      "smoked salmon",
+      "chives"
+    ],
+    "dietary": [
+      "High-Protein"
+    ],
+    "season": "All",
+    "cuisine": "American",
+    "prep_time": "10 min",
+    "difficulty": "Easy",
+    "images": [
+      "scrambled_eggs_salmon_1.jpg",
+      "scrambled_eggs_salmon_2.jpg",
+      "scrambled_eggs_salmon_3.jpg"
+    ],
+    "steps": [
+      "In a bowl, whisk together eggs, milk, salt, and pepper.",
+      "Heat butter in a non-stick skillet over medium heat.",
+      "Pour the egg mixture into the skillet and cook, stirring gently, until soft curds form.",
+      "Remove the skillet from heat just before the eggs are fully cooked to avoid overcooking.",
+      "Gently fold in pieces of smoked salmon.",
+      "Garnish with chopped chives and serve immediately."
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Sweet Potato Hash with Eggs",
+    "category": "Breakfast",
+    "ingredients": [
+      "sweet potato",
+      "onions",
+      "bell peppers",
+      "eggs",
+      "olive oil"
+    ],
+    "dietary": [
+      "Vegetarian",
+      "Gluten-Free"
+    ],
+    "season": "All",
+    "cuisine": "American",
+    "prep_time": "30 min",
+    "difficulty": "Moderate",
+    "images": [
+      "sweet_potato_hash_1.jpg",
+      "sweet_potato_hash_2.jpg",
+      "sweet_potato_hash_3.jpg"
+    ],
+    "steps": [
+      "Peel and dice the sweet potato into small cubes.",
+      "Heat olive oil in a large skillet over medium heat and add the sweet potato.",
+      "Cook for 10 minutes, stirring occasionally, until the sweet potato starts to soften.",
+      "Add diced onions and bell peppers to the skillet and cook for another 5 minutes.",
+      "Make small wells in the hash and crack an egg into each well.",
+      "Cover the skillet and cook until the eggs are set to your liking, about 5 minutes.",
+      "Serve hot."
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Overnight Chia Pudding",
+    "category": "Breakfast",
+    "ingredients": [
+      "chia seeds",
+      "milk",
+      "vanilla",
+      "honey",
+      "berries"
+    ],
+    "dietary": [
+      "Vegetarian",
+      "Gluten-Free"
+    ],
+    "season": "All",
+    "cuisine": "American",
+    "prep_time": "10 min + overnight",
+    "difficulty": "Easy",
+    "images": [
+      "chia_pudding_1.jpg",
+      "chia_pudding_2.jpg",
+      "chia_pudding_3.jpg"
+    ],
+    "steps": [
+      "In a jar or bowl, combine chia seeds, milk, vanilla extract, and honey.",
+      "Stir well to ensure the chia seeds are evenly distributed.",
+      "Cover and refrigerate overnight or for at least 6 hours.",
+      "In the morning, stir the pudding and add more milk if needed for desired consistency.",
+      "Top with fresh berries and serve."
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Apple Cinnamon Oatmeal",
+    "category": "Breakfast",
+    "ingredients": [
+      "oats",
+      "milk",
+      "apple",
+      "cinnamon",
+      "brown sugar"
+    ],
+    "dietary": [
+      "Vegetarian"
+    ],
+    "season": "All",
+    "cuisine": "American",
+    "prep_time": "15 min",
+    "difficulty": "Easy",
+    "images": [
+      "apple_cinnamon_oatmeal_1.jpg",
+      "apple_cinnamon_oatmeal_2.jpg",
+      "apple_cinnamon_oatmeal_3.jpg"
+    ],
+    "steps": [
+      "In a saucepan, combine oats, milk, and a pinch of salt.",
+      "Bring to a simmer over medium heat, stirring occasionally.",
+      "Grate or dice the apple and add it to the oatmeal, along with cinnamon and brown sugar.",
+      "Cook for another 5 minutes, stirring frequently, until the oatmeal is thick and creamy.",
+      "Serve warm, topped with additional apple slices and a sprinkle of cinnamon if desired."
+    ]
+  }
+]
