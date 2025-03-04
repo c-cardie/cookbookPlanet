@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read JSON and Display Object</title>
+</head>
+<body>
+
+    <h1>Recipe Details</h1>
+    <button type="button" onclick="fetchJSONAndDisplayObject(3)">hello</button>
+    <div id="recipe-container">
+        <!-- Recipe details will be displayed here -->
+    </div>
+
+    <script>
+        
+        // Function to fetch JSON and display a specific object by its ID
+        function fetchJSONAndDisplayObject(id) {
+            // Fetch the JSON file (assuming it's in the same directory as this HTML file)
+            fetch('static/recipe/merged_sorted.json')  // Specify the path to your JSON file
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();  // Parse the response as JSON
+                })
+                .then(data => {
+                    // Assuming `data` is an array of objects and we're looking for an object with a specific id
+                    const foundObject = data.find(item => item.id === id);
+
+                    const container = document.getElementById('recipe-container');
+                    if (foundObject) {
+                        // Display recipe information in the container
+                        container.innerHTML = `
+                            <h2>${foundObject.name}</h2>
+                            <p><strong>Category:</strong> ${foundObject.category}</p>
+                            <p><strong>Prep Time:</strong> ${foundObject.prep_time}</p>
+                            <p><strong>Difficulty:</strong> ${foundObject.difficulty}</p>
+                            <p><strong>Cuisine:</strong> ${foundObject.cuisine}</p>
+                            <p><strong>Dietary Info:</strong> ${foundObject.dietary.join(', ')}</p>
+                            <h3>Ingredients:</h3>
+                            <ul>
+                                ${foundObject.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
+                            </ul>
+                            <h3>Steps:</h3>
+                            <ol>
+                                ${foundObject.steps.map(step => `<li>${step}</li>`).join('')}
+                            </ol>
+                            <h3>Images:</h3>
+                            <div>
+                                ${foundObject.images.map(image => `<img src="static/images/${image}" alt="${image}" style="max-width: 100px; margin-right: 10px;">`).join('')}
+                            </div>
+                        `;
+                    } else {
+                        container.innerHTML = '<p>Recipe not found.</p>';
+                    }
+                })
+                .catch(error => {
+                    console.error('There was a problem with the fetch operation:', error);
+                });
+        }
+
+        // Call the function to fetch JSON and display the object with ID 1
+        window.onload = function() {
+            fetchJSONAndDisplayObject(6);  // Fetch object with ID 1
+        };
+    </script>
+
+</body>
+</html>

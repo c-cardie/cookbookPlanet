@@ -25,7 +25,7 @@
         <div class="row justify-content-center sticky-top" id="nav-container">
             <nav class="navbar navbar-expand-lg navbar-light sticky-top mt-3 mb-3" id="navy">
                 <div class="container-fluid justify-content-center">
-                    <a class="navbar-brand text-start" href="/templates/index.html">Home</a>
+                    <a class="navbar-brand text-start invisible" href="/templates/index.html">Home</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -34,7 +34,7 @@
                         <button class="navbar-toggler invisible" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                           </button>
-                        <li class="nav-item invisible" id="nav-home">
+                        <li class="nav-item none" id="nav-home">
                             <a class="nav-link" href="/templates/index.html">Home</a>
                         </li>
                         <li class="nav-item">
@@ -56,47 +56,62 @@
               </nav>
         </div>
         <!--Recipe of the day-->
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col"></div>
-        </div>
-    </div>
-    <!--footer-->
-    <div class="container py-4 py-md-12 px-4 px-md-12 text-body-secondary">
       <div class="row">
-        <div class="col-lg-3 mb-1 sm-1">
-          <a class="d-inline-flex align-items-center mb-1 text-body-emphasis text-decoration-none">
-            <img style="width:180px; height: 60px" alt="food-planet-logo" src="../made_photos/Cook_book_planet.png">
-          </a>
-          <ul class="list-unstyled small">
-            <li class="mb-2 mt-4 p">Always feel free to reach out to us about 
-              any concerns or questions relating to recipes found on this website.</li>
-            <li class="mb-2 mt-4 p">Last Updated: March 3rd, 2025</li>  
-          </ul>
+        <div class="col-lg-9 col-md-9 col-sm-12 p-0">
+            <div id="recipe-container">
+              <!-- Recipe details will be displayed here -->
+            </div>
         </div>
-        <div class="col-6 col-lg-6 mb-3 sm-3">
-          <p class="h5">Links</p>
-          <ul class="list-unstyled">
-            <li><a class="nav-link h6" href="/templates/index.html">Home</a></li>
-            <li><a class="nav-link h6" href="/templates/recipes.html">Recipes</a></li>
-            <li><a class="nav-link h6" href="/templates/favorites.html">Favorites</a></li>
-            <li><a class="nav-link h6" href="/templates/account.html">Account</a></li>
+        <div class="col-lg-3 col-md-3 col-sm-12 pr-n3 rounded" id="books">
+          <ul class="list-unstyled p-3">
+            <li><a href="#">no you</a></li>
+            <li><a href="#">no you</a></li>
+            <li><a href="#">no you</a></li>
+            <li><a href="#">no you</a></li>
+            <li><a href="#">no you</a></li>
+
           </ul>
         </div>
       </div>
+      
     </div>
+<!--footer-->
+<div class="container py-4 py-md-12 px-4 px-md-12 text-body-secondary">
+  <div class="row">
+    <div class="col-lg-3 mb-1 sm-1">
+      <a class="d-inline-flex align-items-center mb-1 text-body-emphasis text-decoration-none">
+        <img style="width:180px; height: 60px" alt="food-planet-logo" src="../made_photos/Cook_book_planet.png">
+      </a>
+      <ul class="list-unstyled small">
+        <li class="mb-2 mt-4 p">Always feel free to reach out to us about 
+          any concerns or questions relating to recipes found on this website.</li>
+        <li class="mb-2 mt-4 p">Last Updated: March 3rd, 2025</li>  
+      </ul>
+    </div>
+    <div class="col-6 col-lg-6 mb-3 sm-3">
+      <p class="h5">Links</p>
+      <ul class="list-unstyled">
+        <li><a class="nav-link h6" href="/templates/index.html">Home</a></li>
+        <li><a class="nav-link h6" href="/templates/recipes.html">Recipes</a></li>
+        <li><a class="nav-link h6" href="/templates/favorites.html">Favorites</a></li>
+        <li><a class="nav-link h6" href="/templates/account.html">Account</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-    <!--bootstrap JavaScript dependencies are included at the bottom of pages before the closing body tag-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!--bootstrap JavaScript dependencies are included at the bottom of pages before the closing body tag-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="/templates/script.js"></script>
+<script>
+
+  // Call the function to fetch JSON and display the object with ID 1
+  window.onload = function() {
+      fetchJSONAndDisplayObject(6);  // Fetch object with ID 1
+  };
+</script>
 </body>
 </html>

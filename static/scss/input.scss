@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 $background: hsl(27, 64%, 89%);
-$second_background: #3A2D32;
+$second_background: white;
 
 html {
     height: 100%;
@@ -21,7 +21,7 @@ html {
 
 #header {
     height: 10vh;
-    background-color: white;
+    background-color: $second_background;
     .h1 {
         font-family: "Lobster", sans-serif;
         font-weight: 400;
@@ -43,8 +43,17 @@ html {
     border-width:0!important;
 }
 
-#nav-list li {
-    justify-content: space-evenly;
+#nav-list {
+    display: flex !important;
+    justify-content: space-evenly !important;  /* Evenly space the items */
+    list-style: none;              /* Remove default list styling */
+    padding: 0;                    /* Remove default padding */
+    margin: 0;                     /* Remove default margin */
+  }
+  
+
+#books {
+    background-color: $second_background !important;
 }
 
 @media(max-width: 991px) {

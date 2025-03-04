@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe List</title>
+</head>
+<body>
+
+    <h1>Recipe List</h1>
+    <div id="recipe-list">
+        <!-- Recipe links will be generated here -->
+    </div>
+
+    <script>
+        // Fetch and display recipes
+        function fetchRecipes() {
+            fetch('../static/recipe/merged_sorted.json')
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data.length)
+                    const listContainer = document.getElementById('recipe-list');
+                    listContainer.innerHTML = data.map(recipe =>
+                        `<p><a href="recipe.html?id=${recipe.id}">${recipe.name}</a></p>`
+                    ).join('');
+                })
+                .catch(error => {
+                    console.error('Error fetching recipes:', error);
+                });
+        }
+
+        window.onload = fetchRecipes;
+    </script>
+
+</body>
+</html>

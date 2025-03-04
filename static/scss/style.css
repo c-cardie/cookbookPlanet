@@ -39,8 +39,16 @@ html {
   border-width: 0 !important;
 }
 
-#nav-list li {
-  justify-content: space-evenly;
+#nav-list {
+  display: flex !important;
+  justify-content: space-evenly !important; /* Evenly space the items */
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+#books {
+  background-color: white !important;
 }
 
 @media (max-width: 991px) {
