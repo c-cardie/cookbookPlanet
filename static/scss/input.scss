@@ -1,91 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 $background: hsl(27, 64%, 89%);
 $second_background: white;
 
 html {
-    height: 100%;
+  height: 100%;
 }
 
 #entire-page {
-    top: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: $background;
+  top: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $background;
 }
 
 #footer-bottom {
-    margin-top: auto; /* Pushes the footer to the bottom */
+  margin-top: auto; /* Pushes the footer to the bottom */
 }
 
 #header {
-    height: 10vh;
-    background-color: $second_background;
-    .h1 {
-        font-family: "Lobster", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-    }
+  height: 10vh;
+  background-color: $second_background;
+  .h1 {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 }
 
 #navy {
-    width: 98%;
+  width: 98%;
 }
 
 #nav-container {
-    background-color: $background;
+  background-color: $background;
 }
 
 .navbar-light {
-    background-color: $background !important;
-    border: none !important;
-    border-width:0!important;
+  background-color: $background !important;
+  border: none !important;
+  border-width: 0 !important;
 }
 
 #nav-list {
-    display: flex !important;
-    justify-content: space-evenly !important;  /* Evenly space the items */
-    list-style: none;              /* Remove default list styling */
-    padding: 0;                    /* Remove default padding */
-    margin: 0;                     /* Remove default margin */
-  }
-  
-
-#books {
-    background-color: $second_background !important;
+  display: flex !important;
+  justify-content: space-evenly !important; /* Evenly space the items */
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
 }
 
-@media(max-width: 991px) {
-    #moto {
-        display: none;
+#books {
+  background-color: $second_background !important;
+}
+
+@media (max-width: 991px) {
+  #moto {
+    display: none;
+  }
+  #logo-container {
+    width: 100%;
+    justify-content: center;
+  }
+  #navy {
+    width: 100%;
+    margin: 0 !important;
+  }
+  #nav-list {
+    margin: 0px;
+  }
+  .navbar-brand {
+    display: none !important;
+  }
+  #nav-home {
+    visibility: visible !important;
+  }
+  .navbar-collapse {
+    height: 100vh !important;
+    width: 100vw !important;
+    background-color: $background;
+    position: fixed;
+    top: 0 !important;
+    left: 0 !important;
+    .navbar-toggler {
+      visibility: visible !important;
     }
-    #logo-container {
-        width: 100%;
-        justify-content: center;
-    }
-    #navy {
-        width: 100%;
-        margin: 0 !important;
-    }
-    #nav-list {
-        margin: 0px;
-    }
-    .navbar-brand {
-        display: none !important;
-    }
-    #nav-home {
-        visibility: visible !important;
-    }
-    .navbar-collapse {
-        height: 100vh !important;
-        width: 100vw !important;
-        background-color: $background;
-        position: fixed;
-        top: 0 !important;
-        left: 0 !important;
-        .navbar-toggler {
-            visibility: visible !important;
-        }
-    }   
+  }
 }

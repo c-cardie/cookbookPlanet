@@ -3,24 +3,13 @@
     "id": 1,
     "name": "Classic Pancakes",
     "category": "Breakfast",
-    "ingredients": [
-      "flour",
-      "milk",
-      "eggs",
-      "sugar",
-      "baking powder"
-    ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "ingredients": ["flour", "milk", "eggs", "sugar", "baking powder"],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "20 min",
     "difficulty": "Easy",
-    "images": [
-      "classic_pancakes_1.webp",
-      "classic_pancakes_2.webp"
-    ],
+    "images": ["classic_pancakes_1.webp", "classic_pancakes_2.webp"],
     "steps": [
       "In a large mixing bowl, combine flour, sugar, and baking powder.",
       "Create a well in the center and pour in milk and eggs.",
@@ -36,23 +25,13 @@
     "id": 2,
     "name": "Spinach and Feta Omelette",
     "category": "Breakfast",
-    "ingredients": [
-      "eggs",
-      "spinach",
-      "feta cheese",
-      "salt",
-      "pepper"
-    ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "ingredients": ["eggs", "spinach", "feta cheese", "salt", "pepper"],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "15 min",
     "difficulty": "Easy",
-    "images": [
-      "spinach_omelette_1.webp"
-    ],
+    "images": ["spinach_omelette_1.webp"],
     "steps": [
       "In a small bowl, whisk eggs with a pinch of salt and pepper.",
       "Heat a non-stick skillet over medium heat and add a small amount of olive oil.",
@@ -68,25 +47,13 @@
     "id": 3,
     "name": "Banana Oatmeal Smoothie",
     "category": "Breakfast",
-    "ingredients": [
-      "banana",
-      "oats",
-      "milk",
-      "honey",
-      "vanilla"
-    ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "ingredients": ["banana", "oats", "milk", "honey", "vanilla"],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "5 min",
     "difficulty": "Easy",
-    "images": [
-      "banana_smoothie_1.webp",
-      "banana_smoothie_2.webp"
-    ],
+    "images": ["banana_smoothie_1.webp", "banana_smoothie_2.webp"],
     "steps": [
       "Peel the banana and add it to a blender.",
       "Add oats, milk, honey, and vanilla extract to the blender.",
@@ -99,24 +66,13 @@
     "id": 4,
     "name": "Avocado Toast with Poached Egg",
     "category": "Breakfast",
-    "ingredients": [
-      "bread",
-      "avocado",
-      "eggs",
-      "salt",
-      "pepper"
-    ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "ingredients": ["bread", "avocado", "eggs", "salt", "pepper"],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "10 min",
     "difficulty": "Easy",
-    "images": [
-      "avocado_toast_1.webp",
-      "avocado_toast_2.webp"
-    ],
+    "images": ["avocado_toast_1.webp", "avocado_toast_2.webp"],
     "steps": [
       "Toast slices of bread in a toaster or under the broiler until golden brown.",
       "Cut the avocado in half, remove the pit, and scoop the flesh into a bowl.",
@@ -133,16 +89,8 @@
     "id": 5,
     "name": "Blueberry Muffins",
     "category": "Breakfast",
-    "ingredients": [
-      "flour",
-      "blueberries",
-      "milk",
-      "eggs",
-      "baking powder"
-    ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "ingredients": ["flour", "blueberries", "milk", "eggs", "baking powder"],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "25 min",
@@ -168,24 +116,13 @@
     "id": 6,
     "name": "French Toast with Maple Syrup",
     "category": "Breakfast",
-    "ingredients": [
-      "bread",
-      "eggs",
-      "milk",
-      "vanilla",
-      "cinnamon"
-    ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "ingredients": ["bread", "eggs", "milk", "vanilla", "cinnamon"],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "20 min",
     "difficulty": "Easy",
-    "images": [
-      "french_toast_1.webp",
-      "french_toast_2.webp"
-    ],
+    "images": ["french_toast_1.webp", "french_toast_2.webp"],
     "steps": [
       "In a shallow dish, whisk together eggs, milk, vanilla extract, and cinnamon.",
       "Heat a skillet or griddle over medium heat and lightly grease with butter.",
@@ -198,23 +135,13 @@
     "id": 7,
     "name": "Greek Yogurt Parfait with Granola and Berries",
     "category": "Breakfast",
-    "ingredients": [
-      "Greek yogurt",
-      "granola",
-      "berries",
-      "honey"
-    ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "ingredients": ["Greek yogurt", "granola", "berries", "honey"],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "All",
     "cuisine": "Mediterranean",
     "prep_time": "5 min",
     "difficulty": "Easy",
-    "images": [
-      "yogurt_parfait_1.webp"
-    ],
+    "images": ["yogurt_parfait_1.webp"],
     "steps": [
       "In a tall glass or bowl, layer Greek yogurt, granola, and berries.",
       "Repeat the layers until the glass is full, finishing with a layer of berries on top.",
@@ -225,24 +152,13 @@
     "id": 8,
     "name": "Breakfast Burrito with Scrambled Eggs and Salsa",
     "category": "Breakfast",
-    "ingredients": [
-      "tortilla",
-      "eggs",
-      "cheese",
-      "salsa",
-      "bell peppers"
-    ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "ingredients": ["tortilla", "eggs", "cheese", "salsa", "bell peppers"],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "Mexican",
     "prep_time": "15 min",
     "difficulty": "Easy",
-    "images": [
-      "breakfast_burrito_1.webp",
-      "breakfast_burrito_2.webp"
-    ],
+    "images": ["breakfast_burrito_1.webp", "breakfast_burrito_2.webp"],
     "steps": [
       "Whisk eggs in a bowl and season with salt and pepper.",
       "Heat a skillet over medium heat and lightly grease with butter or oil.",
@@ -256,24 +172,13 @@
     "id": 9,
     "name": "Vegan Tofu Scramble",
     "category": "Breakfast",
-    "ingredients": [
-      "tofu",
-      "turmeric",
-      "bell peppers",
-      "onions",
-      "spinach"
-    ],
-    "dietary": [
-      "Vegan",
-      "Gluten-Free"
-    ],
+    "ingredients": ["tofu", "turmeric", "bell peppers", "onions", "spinach"],
+    "dietary": ["Vegan", "Gluten-Free"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "15 min",
     "difficulty": "Easy",
-    "images": [
-      "tofu_scramble_1.webp"
-    ],
+    "images": ["tofu_scramble_1.webp"],
     "steps": [
       "Heat oil in a skillet over medium heat.",
       "Crumble tofu into the skillet and sprinkle with turmeric.",
@@ -286,22 +191,13 @@
     "id": 10,
     "name": "Sausage and Egg Breakfast Casserole",
     "category": "Breakfast",
-    "ingredients": [
-      "sausage",
-      "eggs",
-      "milk",
-      "bread",
-      "cheese"
-    ],
+    "ingredients": ["sausage", "eggs", "milk", "bread", "cheese"],
     "dietary": [],
     "season": "All",
     "cuisine": "American",
     "prep_time": "40 min",
     "difficulty": "Moderate",
-    "images": [
-      "breakfast_casserole_1.webp",
-      "breakfast_casserole_2.webp"
-    ],
+    "images": ["breakfast_casserole_1.webp", "breakfast_casserole_2.webp"],
     "steps": [
       "Preheat the oven to 375°F (190°C) and grease a baking dish.",
       "Cook sausage in a skillet over medium heat until browned, then set aside.",
@@ -316,15 +212,8 @@
     "id": 11,
     "name": "Peanut Butter and Banana Toast",
     "category": "Breakfast",
-    "ingredients": [
-      "bread",
-      "peanut butter",
-      "banana",
-      "honey"
-    ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "ingredients": ["bread", "peanut butter", "banana", "honey"],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "5 min",
@@ -346,16 +235,8 @@
     "id": 12,
     "name": "Scrambled Eggs with Smoked Salmon",
     "category": "Breakfast",
-    "ingredients": [
-      "eggs",
-      "milk",
-      "butter",
-      "smoked salmon",
-      "chives"
-    ],
-    "dietary": [
-      "High-Protein"
-    ],
+    "ingredients": ["eggs", "milk", "butter", "smoked salmon", "chives"],
+    "dietary": ["High-Protein"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "10 min",
@@ -385,10 +266,7 @@
       "eggs",
       "olive oil"
     ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "30 min",
@@ -412,17 +290,8 @@
     "id": 14,
     "name": "Overnight Chia Pudding",
     "category": "Breakfast",
-    "ingredients": [
-      "chia seeds",
-      "milk",
-      "vanilla",
-      "honey",
-      "berries"
-    ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "ingredients": ["chia seeds", "milk", "vanilla", "honey", "berries"],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "10 min + overnight",
@@ -444,16 +313,8 @@
     "id": 15,
     "name": "Apple Cinnamon Oatmeal",
     "category": "Breakfast",
-    "ingredients": [
-      "oats",
-      "milk",
-      "apple",
-      "cinnamon",
-      "brown sugar"
-    ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "ingredients": ["oats", "milk", "apple", "cinnamon", "brown sugar"],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "15 min",
@@ -482,17 +343,12 @@
       "croutons",
       "caesar dressing"
     ],
-    "dietary": [
-      "High-Protein"
-    ],
+    "dietary": ["High-Protein"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "25 min",
     "difficulty": "Easy",
-    "images": [
-      "caesar_salad_1.webp",
-      "caesar_salad_2.webp"
-    ],
+    "images": ["caesar_salad_1.webp", "caesar_salad_2.webp"],
     "steps": [
       "Preheat a grill or grill pan over medium-high heat.",
       "Season chicken breasts with salt, pepper, and olive oil.",
@@ -515,10 +371,7 @@
       "lime",
       "cilantro"
     ],
-    "dietary": [
-      "Vegan",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegan", "Gluten-Free"],
     "season": "All",
     "cuisine": "Mexican",
     "prep_time": "20 min",
@@ -546,17 +399,12 @@
       "basil pesto",
       "olive oil"
     ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "Italian",
     "prep_time": "10 min",
     "difficulty": "Easy",
-    "images": [
-      "caprese_sandwich_1.webp",
-      "caprese_sandwich_2.webp"
-    ],
+    "images": ["caprese_sandwich_1.webp", "caprese_sandwich_2.webp"],
     "steps": [
       "Slice bread, mozzarella, and tomatoes into even pieces.",
       "Spread a generous layer of basil pesto on one side of each bread slice.",
@@ -570,25 +418,13 @@
     "id": 19,
     "name": "Tomato Basil Soup with Grilled Cheese",
     "category": "Lunch",
-    "ingredients": [
-      "tomatoes",
-      "onion",
-      "garlic",
-      "basil",
-      "bread",
-      "cheese"
-    ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "ingredients": ["tomatoes", "onion", "garlic", "basil", "bread", "cheese"],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "30 min",
     "difficulty": "Moderate",
-    "images": [
-      "tomato_soup_1.webp",
-      "grilled_cheese_1.webp"
-    ],
+    "images": ["tomato_soup_1.webp", "grilled_cheese_1.webp"],
     "steps": [
       "Heat olive oil in a large pot over medium heat and sauté diced onions and garlic until soft.",
       "Add chopped tomatoes and cook for 10 minutes, stirring occasionally.",
@@ -611,10 +447,7 @@
       "red onion",
       "lemon"
     ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "All",
     "cuisine": "Mediterranean",
     "prep_time": "15 min",
@@ -643,9 +476,7 @@
       "mayonnaise",
       "mustard"
     ],
-    "dietary": [
-      "High-Protein"
-    ],
+    "dietary": ["High-Protein"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "10 min",
@@ -676,10 +507,7 @@
       "cream",
       "nutmeg"
     ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "Winter",
     "cuisine": "American",
     "prep_time": "40 min",
@@ -712,10 +540,7 @@
       "lettuce leaves",
       "lemon juice"
     ],
-    "dietary": [
-      "High-Protein",
-      "Gluten-Free"
-    ],
+    "dietary": ["High-Protein", "Gluten-Free"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "15 min",
@@ -746,10 +571,7 @@
       "curry powder",
       "cilantro"
     ],
-    "dietary": [
-      "Vegan",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegan", "Gluten-Free"],
     "season": "All",
     "cuisine": "Indian",
     "prep_time": "30 min",
@@ -774,13 +596,7 @@
     "id": 25,
     "name": "BLT Sandwich",
     "category": "Lunch",
-    "ingredients": [
-      "bread",
-      "bacon",
-      "lettuce",
-      "tomatoes",
-      "mayonnaise"
-    ],
+    "ingredients": ["bread", "bacon", "lettuce", "tomatoes", "mayonnaise"],
     "dietary": [],
     "season": "All",
     "cuisine": "American",
@@ -848,10 +664,7 @@
       "salt",
       "pepper"
     ],
-    "dietary": [
-      "High-Protein",
-      "Gluten-Free"
-    ],
+    "dietary": ["High-Protein", "Gluten-Free"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "20 min",
@@ -882,10 +695,7 @@
       "ginger",
       "spices"
     ],
-    "dietary": [
-      "Vegan",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegan", "Gluten-Free"],
     "season": "All",
     "cuisine": "Indian",
     "prep_time": "30 min",
@@ -919,9 +729,7 @@
       "garlic",
       "olive oil"
     ],
-    "dietary": [
-      "High-Protein"
-    ],
+    "dietary": ["High-Protein"],
     "season": "All",
     "cuisine": "Italian",
     "prep_time": "30 min",
@@ -988,9 +796,7 @@
       "chicken broth",
       "white wine"
     ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "Italian",
     "prep_time": "40 min",
@@ -1025,10 +831,7 @@
       "basil",
       "lime"
     ],
-    "dietary": [
-      "Vegan",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegan", "Gluten-Free"],
     "season": "All",
     "cuisine": "Thai",
     "prep_time": "30 min",
@@ -1055,17 +858,8 @@
     "id": 33,
     "name": "Roasted Herb-Crusted Chicken",
     "category": "Dinner",
-    "ingredients": [
-      "chicken thighs",
-      "herbs",
-      "garlic",
-      "butter",
-      "lemon"
-    ],
-    "dietary": [
-      "High-Protein",
-      "Gluten-Free"
-    ],
+    "ingredients": ["chicken thighs", "herbs", "garlic", "butter", "lemon"],
+    "dietary": ["High-Protein", "Gluten-Free"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "50 min",
@@ -1130,9 +924,7 @@
       "mozzarella",
       "basil"
     ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "Italian",
     "prep_time": "50 min",
@@ -1167,10 +959,7 @@
       "olive oil",
       "pita bread"
     ],
-    "dietary": [
-      "Vegan",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegan", "Gluten-Free"],
     "season": "All",
     "cuisine": "Middle Eastern",
     "prep_time": "10 min",
@@ -1199,10 +988,7 @@
       "chocolate chips",
       "flaxseed"
     ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "15 min",
@@ -1232,9 +1018,7 @@
       "egg",
       "olive oil spray"
     ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "20 min",
@@ -1257,16 +1041,8 @@
     "id": 39,
     "name": "Deviled Eggs",
     "category": "Snacks",
-    "ingredients": [
-      "eggs",
-      "mayonnaise",
-      "mustard",
-      "paprika"
-    ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "ingredients": ["eggs", "mayonnaise", "mustard", "paprika"],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "15 min",
@@ -1295,10 +1071,7 @@
       "parsley",
       "salt"
     ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "10 min",
@@ -1328,9 +1101,7 @@
       "flour",
       "vanilla extract"
     ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "35 min",
@@ -1364,9 +1135,7 @@
       "butter",
       "lemon juice"
     ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "dietary": ["Vegetarian"],
     "season": "Autumn",
     "cuisine": "American",
     "prep_time": "1 hr",
@@ -1400,9 +1169,7 @@
       "lemon juice",
       "graham crackers"
     ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "dietary": ["Vegetarian"],
     "season": "Spring",
     "cuisine": "American",
     "prep_time": "45 min",
@@ -1435,9 +1202,7 @@
       "eggs",
       "sugar"
     ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "Italian",
     "prep_time": "6 hrs (including chilling)",
@@ -1469,10 +1234,7 @@
       "almond milk",
       "vanilla extract"
     ],
-    "dietary": [
-      "Vegan",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegan", "Gluten-Free"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "15 min",
@@ -1501,9 +1263,7 @@
       "vanilla extract",
       "biscuits"
     ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "dietary": ["Vegetarian"],
     "season": "Summer",
     "cuisine": "American",
     "prep_time": "30 min",
@@ -1534,10 +1294,7 @@
       "berries",
       "lemon juice"
     ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "All",
     "cuisine": "Italian",
     "prep_time": "4 hrs (including chilling)",
@@ -1571,9 +1328,7 @@
       "flour",
       "vanilla"
     ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "French",
     "prep_time": "25 min",
@@ -1598,16 +1353,8 @@
     "id": 49,
     "name": "Classic Creme Brulee",
     "category": "Desserts",
-    "ingredients": [
-      "heavy cream",
-      "egg yolks",
-      "sugar",
-      "vanilla extract"
-    ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "ingredients": ["heavy cream", "egg yolks", "sugar", "vanilla extract"],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "All",
     "cuisine": "French",
     "prep_time": "1 hr (including chilling)",
@@ -1640,9 +1387,7 @@
       "powdered sugar",
       "chocolate chips"
     ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "1 hr (including chilling)",
@@ -1665,16 +1410,8 @@
     "id": 51,
     "name": "Classic Lemonade",
     "category": "Beverages",
-    "ingredients": [
-      "lemons",
-      "sugar",
-      "water",
-      "ice"
-    ],
-    "dietary": [
-      "Vegan",
-      "Gluten-Free"
-    ],
+    "ingredients": ["lemons", "sugar", "water", "ice"],
+    "dietary": ["Vegan", "Gluten-Free"],
     "season": "Summer",
     "cuisine": "American",
     "prep_time": "10 min",
@@ -1696,16 +1433,8 @@
     "id": 52,
     "name": "Iced Coffee",
     "category": "Beverages",
-    "ingredients": [
-      "coffee",
-      "milk",
-      "sugar",
-      "ice"
-    ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "ingredients": ["coffee", "milk", "sugar", "ice"],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "5 min",
@@ -1727,17 +1456,8 @@
     "id": 53,
     "name": "Berry Smoothie",
     "category": "Beverages",
-    "ingredients": [
-      "mixed berries",
-      "banana",
-      "yogurt",
-      "milk",
-      "honey"
-    ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "ingredients": ["mixed berries", "banana", "yogurt", "milk", "honey"],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "5 min",
@@ -1766,10 +1486,7 @@
       "vanilla extract",
       "whipped cream"
     ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "Winter",
     "cuisine": "American",
     "prep_time": "10 min",
@@ -1791,17 +1508,8 @@
     "id": 55,
     "name": "Mojito Mocktail",
     "category": "Beverages",
-    "ingredients": [
-      "mint leaves",
-      "lime",
-      "sugar",
-      "sparkling water",
-      "ice"
-    ],
-    "dietary": [
-      "Vegan",
-      "Gluten-Free"
-    ],
+    "ingredients": ["mint leaves", "lime", "sugar", "sparkling water", "ice"],
+    "dietary": ["Vegan", "Gluten-Free"],
     "season": "All",
     "cuisine": "Cuban",
     "prep_time": "5 min",
@@ -1831,10 +1539,7 @@
       "olive oil",
       "herbs"
     ],
-    "dietary": [
-      "Vegan",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegan", "Gluten-Free"],
     "season": "Summer",
     "cuisine": "Mediterranean",
     "prep_time": "20 min",
@@ -1865,10 +1570,7 @@
       "olive oil",
       "balsamic glaze"
     ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "Summer",
     "cuisine": "Italian",
     "prep_time": "10 min",
@@ -1890,17 +1592,8 @@
     "id": 58,
     "name": "Watermelon Feta Salad",
     "category": "Summer",
-    "ingredients": [
-      "watermelon",
-      "feta cheese",
-      "mint",
-      "lime",
-      "olive oil"
-    ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "ingredients": ["watermelon", "feta cheese", "mint", "lime", "olive oil"],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "Summer",
     "cuisine": "Mediterranean",
     "prep_time": "10 min",
@@ -1930,10 +1623,7 @@
       "avocado",
       "cilantro"
     ],
-    "dietary": [
-      "High-Protein",
-      "Gluten-Free"
-    ],
+    "dietary": ["High-Protein", "Gluten-Free"],
     "season": "Summer",
     "cuisine": "Mexican",
     "prep_time": "20 min",
@@ -1956,17 +1646,8 @@
     "id": 60,
     "name": "Peach Iced Tea",
     "category": "Summer",
-    "ingredients": [
-      "peaches",
-      "black tea",
-      "sugar",
-      "water",
-      "ice"
-    ],
-    "dietary": [
-      "Vegan",
-      "Gluten-Free"
-    ],
+    "ingredients": ["peaches", "black tea", "sugar", "water", "ice"],
+    "dietary": ["Vegan", "Gluten-Free"],
     "season": "Summer",
     "cuisine": "American",
     "prep_time": "15 min",
@@ -2030,10 +1711,7 @@
       "vegetable broth",
       "basil"
     ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "Winter",
     "cuisine": "American",
     "prep_time": "30 min",
@@ -2065,10 +1743,7 @@
       "parmesan cheese",
       "vegetable broth"
     ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "Winter",
     "cuisine": "Italian",
     "prep_time": "40 min",
@@ -2132,10 +1807,7 @@
       "orange slices",
       "honey"
     ],
-    "dietary": [
-      "Vegan",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegan", "Gluten-Free"],
     "season": "Winter",
     "cuisine": "American",
     "prep_time": "15 min",
@@ -2166,10 +1838,7 @@
       "ginger",
       "sesame oil"
     ],
-    "dietary": [
-      "Vegan",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegan", "Gluten-Free"],
     "season": "Spring",
     "cuisine": "Asian",
     "prep_time": "20 min",
@@ -2201,10 +1870,7 @@
       "mint leaves",
       "cream"
     ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "Spring",
     "cuisine": "British",
     "prep_time": "30 min",
@@ -2234,10 +1900,7 @@
       "walnuts",
       "balsamic vinaigrette"
     ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "Spring",
     "cuisine": "American",
     "prep_time": "10 min",
@@ -2266,10 +1929,7 @@
       "garlic",
       "olive oil"
     ],
-    "dietary": [
-      "High-Protein",
-      "Gluten-Free"
-    ],
+    "dietary": ["High-Protein", "Gluten-Free"],
     "season": "Spring",
     "cuisine": "Mediterranean",
     "prep_time": "30 min",
@@ -2300,9 +1960,7 @@
       "parmesan cheese",
       "herbs"
     ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "dietary": ["Vegetarian"],
     "season": "Spring",
     "cuisine": "French",
     "prep_time": "40 min",
@@ -2334,10 +1992,7 @@
       "cream",
       "nutmeg"
     ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "Autumn",
     "cuisine": "American",
     "prep_time": "30 min",
@@ -2368,10 +2023,7 @@
       "salt",
       "pepper"
     ],
-    "dietary": [
-      "Vegan",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegan", "Gluten-Free"],
     "season": "Autumn",
     "cuisine": "American",
     "prep_time": "25 min",
@@ -2402,9 +2054,7 @@
       "butter",
       "cinnamon"
     ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "dietary": ["Vegetarian"],
     "season": "Autumn",
     "cuisine": "American",
     "prep_time": "45 min",
@@ -2435,9 +2085,7 @@
       "butter",
       "parmesan cheese"
     ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "dietary": ["Vegetarian"],
     "season": "Autumn",
     "cuisine": "Italian",
     "prep_time": "40 min",
@@ -2468,10 +2116,7 @@
       "blue cheese",
       "balsamic vinaigrette"
     ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "Autumn",
     "cuisine": "American",
     "prep_time": "15 min",
@@ -2502,9 +2147,7 @@
       "olive oil",
       "balsamic glaze"
     ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "Italian",
     "prep_time": "15 min",
@@ -2534,9 +2177,7 @@
       "breadcrumbs",
       "parsley"
     ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "30 min",
@@ -2567,10 +2208,7 @@
       "olive oil",
       "balsamic glaze"
     ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "All",
     "cuisine": "Italian",
     "prep_time": "10 min",
@@ -2592,16 +2230,8 @@
     "id": 79,
     "name": "Deviled Eggs with Bacon",
     "category": "Appetizers",
-    "ingredients": [
-      "eggs",
-      "mayonnaise",
-      "mustard",
-      "paprika",
-      "bacon"
-    ],
-    "dietary": [
-      "Gluten-Free"
-    ],
+    "ingredients": ["eggs", "mayonnaise", "mustard", "paprika", "bacon"],
+    "dietary": ["Gluten-Free"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "20 min",

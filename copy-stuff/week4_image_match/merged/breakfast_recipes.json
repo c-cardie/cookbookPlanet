@@ -3,24 +3,13 @@
     "id": 1,
     "name": "Classic Pancakes",
     "category": "Breakfast",
-    "ingredients": [
-      "flour",
-      "milk",
-      "eggs",
-      "sugar",
-      "baking powder"
-    ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "ingredients": ["flour", "milk", "eggs", "sugar", "baking powder"],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "20 min",
     "difficulty": "Easy",
-    "images": [
-      "classic_pancakes_1.jpg",
-      "classic_pancakes_2.jpg"
-    ],
+    "images": ["classic_pancakes_1.jpg", "classic_pancakes_2.jpg"],
     "steps": [
       "In a large mixing bowl, combine flour, sugar, and baking powder.",
       "Create a well in the center and pour in milk and eggs.",
@@ -36,23 +25,13 @@
     "id": 2,
     "name": "Spinach and Feta Omelette",
     "category": "Breakfast",
-    "ingredients": [
-      "eggs",
-      "spinach",
-      "feta cheese",
-      "salt",
-      "pepper"
-    ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "ingredients": ["eggs", "spinach", "feta cheese", "salt", "pepper"],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "15 min",
     "difficulty": "Easy",
-    "images": [
-      "spinach_omelette_1.jpg"
-    ],
+    "images": ["spinach_omelette_1.jpg"],
     "steps": [
       "In a small bowl, whisk eggs with a pinch of salt and pepper.",
       "Heat a non-stick skillet over medium heat and add a small amount of olive oil.",
@@ -68,25 +47,13 @@
     "id": 3,
     "name": "Banana Oatmeal Smoothie",
     "category": "Breakfast",
-    "ingredients": [
-      "banana",
-      "oats",
-      "milk",
-      "honey",
-      "vanilla"
-    ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "ingredients": ["banana", "oats", "milk", "honey", "vanilla"],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "5 min",
     "difficulty": "Easy",
-    "images": [
-      "banana_smoothie_1.jpg",
-      "banana_smoothie_2.jpg"
-    ],
+    "images": ["banana_smoothie_1.jpg", "banana_smoothie_2.jpg"],
     "steps": [
       "Peel the banana and add it to a blender.",
       "Add oats, milk, honey, and vanilla extract to the blender.",
@@ -99,24 +66,13 @@
     "id": 4,
     "name": "Avocado Toast with Poached Egg",
     "category": "Breakfast",
-    "ingredients": [
-      "bread",
-      "avocado",
-      "eggs",
-      "salt",
-      "pepper"
-    ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "ingredients": ["bread", "avocado", "eggs", "salt", "pepper"],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "10 min",
     "difficulty": "Easy",
-    "images": [
-      "avocado_toast_1.jpg",
-      "avocado_toast_2.jpg"
-    ],
+    "images": ["avocado_toast_1.jpg", "avocado_toast_2.jpg"],
     "steps": [
       "Toast slices of bread in a toaster or under the broiler until golden brown.",
       "Cut the avocado in half, remove the pit, and scoop the flesh into a bowl.",
@@ -133,16 +89,8 @@
     "id": 5,
     "name": "Blueberry Muffins",
     "category": "Breakfast",
-    "ingredients": [
-      "flour",
-      "blueberries",
-      "milk",
-      "eggs",
-      "baking powder"
-    ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "ingredients": ["flour", "blueberries", "milk", "eggs", "baking powder"],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "25 min",
@@ -168,24 +116,13 @@
     "id": 6,
     "name": "French Toast with Maple Syrup",
     "category": "Breakfast",
-    "ingredients": [
-      "bread",
-      "eggs",
-      "milk",
-      "vanilla",
-      "cinnamon"
-    ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "ingredients": ["bread", "eggs", "milk", "vanilla", "cinnamon"],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "20 min",
     "difficulty": "Easy",
-    "images": [
-      "french_toast_1.jpg",
-      "french_toast_2.jpg"
-    ],
+    "images": ["french_toast_1.jpg", "french_toast_2.jpg"],
     "steps": [
       "In a shallow dish, whisk together eggs, milk, vanilla extract, and cinnamon.",
       "Heat a skillet or griddle over medium heat and lightly grease with butter.",
@@ -198,23 +135,13 @@
     "id": 7,
     "name": "Greek Yogurt Parfait with Granola and Berries",
     "category": "Breakfast",
-    "ingredients": [
-      "Greek yogurt",
-      "granola",
-      "berries",
-      "honey"
-    ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "ingredients": ["Greek yogurt", "granola", "berries", "honey"],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "All",
     "cuisine": "Mediterranean",
     "prep_time": "5 min",
     "difficulty": "Easy",
-    "images": [
-      "yogurt_parfait_1.jpg"
-    ],
+    "images": ["yogurt_parfait_1.jpg"],
     "steps": [
       "In a tall glass or bowl, layer Greek yogurt, granola, and berries.",
       "Repeat the layers until the glass is full, finishing with a layer of berries on top.",
@@ -225,24 +152,13 @@
     "id": 8,
     "name": "Breakfast Burrito with Scrambled Eggs and Salsa",
     "category": "Breakfast",
-    "ingredients": [
-      "tortilla",
-      "eggs",
-      "cheese",
-      "salsa",
-      "bell peppers"
-    ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "ingredients": ["tortilla", "eggs", "cheese", "salsa", "bell peppers"],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "Mexican",
     "prep_time": "15 min",
     "difficulty": "Easy",
-    "images": [
-      "breakfast_burrito_1.jpg",
-      "breakfast_burrito_2.jpg"
-    ],
+    "images": ["breakfast_burrito_1.jpg", "breakfast_burrito_2.jpg"],
     "steps": [
       "Whisk eggs in a bowl and season with salt and pepper.",
       "Heat a skillet over medium heat and lightly grease with butter or oil.",
@@ -256,24 +172,13 @@
     "id": 9,
     "name": "Vegan Tofu Scramble",
     "category": "Breakfast",
-    "ingredients": [
-      "tofu",
-      "turmeric",
-      "bell peppers",
-      "onions",
-      "spinach"
-    ],
-    "dietary": [
-      "Vegan",
-      "Gluten-Free"
-    ],
+    "ingredients": ["tofu", "turmeric", "bell peppers", "onions", "spinach"],
+    "dietary": ["Vegan", "Gluten-Free"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "15 min",
     "difficulty": "Easy",
-    "images": [
-      "tofu_scramble_1.jpg"
-    ],
+    "images": ["tofu_scramble_1.jpg"],
     "steps": [
       "Heat oil in a skillet over medium heat.",
       "Crumble tofu into the skillet and sprinkle with turmeric.",
@@ -286,22 +191,13 @@
     "id": 10,
     "name": "Sausage and Egg Breakfast Casserole",
     "category": "Breakfast",
-    "ingredients": [
-      "sausage",
-      "eggs",
-      "milk",
-      "bread",
-      "cheese"
-    ],
+    "ingredients": ["sausage", "eggs", "milk", "bread", "cheese"],
     "dietary": [],
     "season": "All",
     "cuisine": "American",
     "prep_time": "40 min",
     "difficulty": "Moderate",
-    "images": [
-      "breakfast_casserole_1.jpg",
-      "breakfast_casserole_2.jpg"
-    ],
+    "images": ["breakfast_casserole_1.jpg", "breakfast_casserole_2.jpg"],
     "steps": [
       "Preheat the oven to 375°F (190°C) and grease a baking dish.",
       "Cook sausage in a skillet over medium heat until browned, then set aside.",
@@ -316,15 +212,8 @@
     "id": 11,
     "name": "Peanut Butter and Banana Toast",
     "category": "Breakfast",
-    "ingredients": [
-      "bread",
-      "peanut butter",
-      "banana",
-      "honey"
-    ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "ingredients": ["bread", "peanut butter", "banana", "honey"],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "5 min",
@@ -346,16 +235,8 @@
     "id": 12,
     "name": "Scrambled Eggs with Smoked Salmon",
     "category": "Breakfast",
-    "ingredients": [
-      "eggs",
-      "milk",
-      "butter",
-      "smoked salmon",
-      "chives"
-    ],
-    "dietary": [
-      "High-Protein"
-    ],
+    "ingredients": ["eggs", "milk", "butter", "smoked salmon", "chives"],
+    "dietary": ["High-Protein"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "10 min",
@@ -385,10 +266,7 @@
       "eggs",
       "olive oil"
     ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "30 min",
@@ -412,17 +290,8 @@
     "id": 14,
     "name": "Overnight Chia Pudding",
     "category": "Breakfast",
-    "ingredients": [
-      "chia seeds",
-      "milk",
-      "vanilla",
-      "honey",
-      "berries"
-    ],
-    "dietary": [
-      "Vegetarian",
-      "Gluten-Free"
-    ],
+    "ingredients": ["chia seeds", "milk", "vanilla", "honey", "berries"],
+    "dietary": ["Vegetarian", "Gluten-Free"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "10 min + overnight",
@@ -444,16 +313,8 @@
     "id": 15,
     "name": "Apple Cinnamon Oatmeal",
     "category": "Breakfast",
-    "ingredients": [
-      "oats",
-      "milk",
-      "apple",
-      "cinnamon",
-      "brown sugar"
-    ],
-    "dietary": [
-      "Vegetarian"
-    ],
+    "ingredients": ["oats", "milk", "apple", "cinnamon", "brown sugar"],
+    "dietary": ["Vegetarian"],
     "season": "All",
     "cuisine": "American",
     "prep_time": "15 min",
