@@ -66,8 +66,8 @@ function displayRecipe(index) {
     // Create the recipe HTML structure
     container.innerHTML = `
     <!-- Recipe Info -->
-    <div class="row p-3">
-      <div class="col-lg-9 p-3">
+    <div class="row p-3 d-flex w-100">
+      <div class="col-lg-8 col-md-8 p-3">
           <div class="card" id="individual_card">
               <div class="card-body text-left">
                   <h2 class="card-title">${recipe.name}</h2>
@@ -89,16 +89,16 @@ function displayRecipe(index) {
       </div>
 
       <!-- Images Section -->
-      <div class="col-lg-3 p-3">
+      <div class="col-lg-4 col-md-4 col-sm-12 p-3">
           <div class="card h-100">
               <div class="card-body d-flex flex-column justify-content-between">
                   <h3 class="card-title">Images:</h3>
                   <div class="d-flex justify-content-center">
                       <!-- Image stays within card boundaries, with proper scaling -->
-                      <img id="recipe-image" src="../static/images/${recipe.images[currentImageIndex]}" alt="${recipe.images[currentImageIndex]}" class="img-fluid rounded" style="max-width: 250px; height: auto; object-fit: cover; overflow: hidden;">
+                      <img id="recipe-image" src="../static/images/${recipe.images[currentImageIndex]}" alt="${recipe.images[currentImageIndex]}" class="img-fluid rounded" style="max-width: 400px; height: auto; object-fit: cover; overflow: hidden;">
                   </div>
                   <!-- Previous and Next Buttons -->
-                  <div class="d-flex justify-content-between">
+                  <div class="d-flex justify-content-between pt-3">
                       <button class="btn btn-primary" id="prev-button">Previous</button>
                       <button class="btn btn-primary" id="next-button">Next</button>
                   </div>
