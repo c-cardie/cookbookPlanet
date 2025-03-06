@@ -2242,5 +2242,41 @@
       "Top each egg with crumbled cooked bacon and a sprinkle of paprika.",
       "Serve immediately."
     ]
+  },
+  {
+    "id": 80,
+    "name": "Spinach and Artichoke Dip",
+    "category": "Appetizers",
+    "ingredients": [
+        "spinach",
+        "artichokes",
+        "cream cheese",
+        "parmesan cheese",
+        "garlic",
+        "sour cream"
+    ],
+    "dietary": [
+        "Vegetarian",
+        "Gluten-Free"
+    ],
+    "season": "All",
+    "cuisine": "American",
+    "prep_time": "30 min",
+    "difficulty": "Moderate",
+    "images": [
+        "spinach_artichoke_dip_1.webp",
+        "spinach_artichoke_dip_2.webp",
+        "spinach_artichoke_dip_3.webp",
+        "spinach_artichoke_dip_4.webp",
+        "spinach_artichoke_dip_5.webp",
+        "spinach_artichoke_dip_6.webp"
+    ],
+    "steps": [
+        "Preheat the oven to 375\u00b0F (190\u00b0C).",
+        "In a bowl, mix chopped spinach, artichokes, cream cheese, sour cream, grated parmesan cheese, and minced garlic.",
+        "Transfer the mixture to a baking dish and spread evenly.",
+        "Bake for 20 minutes, or until bubbly and golden on top.",
+        "Serve hot with tortilla chips or bread."
+    ]
   }
 ]
