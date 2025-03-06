@@ -83,6 +83,9 @@ html {
   .navbar-collapse .navbar-toggler {
     visibility: visible !important;
   }
+  #card-container {
+    padding-right: 0px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

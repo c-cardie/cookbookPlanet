@@ -200,6 +200,57 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      function toggleFavorite(keyName, ID) {
+        // Retrieve existing data or initialize an empty object
+        let data = JSON.parse(localStorage.getItem("appData")) || {};
+    
+        // Ensure the key exists and is an array
+        if (!data[keyName]) {
+            data[keyName] = [];
+        }
+    
+        // Check if the ID is already present
+        let index = data[keyName].indexOf(ID);
+        
+        if (index === -1) {
+            // If ID is not present, add it
+            data[keyName].push(ID);
+            console.log(`Added ID ${ID} to ${keyName}`);
+        } else {
+            // If ID is present, remove it
+            data[keyName].splice(index, 1);
+            // console.log(`Removed ID ${ID} from ${keyName}`);
+        }
+    
+        // Save updated data back to localStorage
+        localStorage.setItem("appData", JSON.stringify(data));
+    
+        // console.log("Updated localStorage:", data.favorites);
+    }
+
+    function inFavorite(keyName, ID) {
+      let data = JSON.parse(localStorage.getItem("appData")) || {};
+      // console.log("Parsed LocalStorage Data:", data);
+  
+      // Ensure key exists and is an array
+      if (!data[keyName]) {
+          console.log(`Key "${keyName}" not found in LocalStorage`);
+          return false;
+      }
+  
+      // console.log(`Checking if ID ${ID} is in`, data[keyName]);
+  
+      // Convert both ID and stored values to strings for comparison
+      let idString = ID.toString();
+      let storedIds = data[keyName].map(id => id.toString());
+  
+      let isFavorite = storedIds.includes(idString);
+      // console.log(`Is ${ID} in favorites?`, isFavorite);
+  
+      return isFavorite;
+  }
+  
+    
       // card return for all recipes
       function fetchRecipes() {
         fetch("../static/recipe/merged_sorted.json")
@@ -209,40 +260,41 @@
             listContainer.innerHTML = "";
 
             data.forEach((recipe, index) => {
-              listContainer.innerHTML += `
-                          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                              <div class="card overflow-auto">
-                                  <img src="../static/images/${
-                                    recipe.images[0]
-                                  }" class="card-img-top w-100 rounded" alt="${recipe.name}">
-                                  <button type="button" class="btn btn-outline-light position-absolute top-0 m-2 float-left bg-transparent border-2" onclick="toggleFavorite(${recipe.id})" data-toggle="button" aria-pressed="false" autocomplete="off"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
-                                    </svg>
-                                  </button>
-                                  <div class="card-body">
-                                      <h5 class="card-title">
-                                          <a href="../templates/recipe.html?id=${
-                                            recipe.id
-                                          }">${recipe.name}</a>
-                                      </h5>
-                                      <p class="card-text"><strong>Prep Time:</strong> ${
-                                        recipe.prep_time
-                                      }</p>
-                                      <p class="card-text"><strong>Difficulty:</strong> ${
-                                        recipe.difficulty
-                                      }</p>
-                                      <p class="card-text"><strong>Cuisine:</strong> ${
-                                        recipe.cuisine
-                                      }</p>
-                                      <p class="card-text"><strong>Dietary Info:</strong> ${recipe.dietary.join(
-                                        ", ",
-                                      )}</p>
-                                      <h6>Ingredients:</h6>
-                                      <p>${recipe.ingredients.join(", ")}</p>
-                                  </div>
-                              </div>
-                          </div>`;
+              const isFavorite = inFavorite('favorites', recipe.id) === false;
+              const favoriteButton = isFavorite 
+                ? `<button type="button" class="btn btn-outline-danger position-absolute top-0 m-2 float-left bg-transparent border-2 active" onclick="toggleFavorite('favorites', ${recipe.id})" data-toggle="button" aria-pressed="true" autocomplete="off" id="favorite-btn-${recipe.id}">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                      </svg>
+                    </button>`
+                : `<button type="button" class="btn btn-outline-danger position-absolute top-0 m-2 float-left bg-transparent border-2" onclick="toggleFavorite('favorites', ${recipe.id})" data-toggle="button" aria-pressed="false" autocomplete="off" id="favorite-btn-${recipe.id}">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                      </svg>
+                    </button>`;
+                  
+              const cardHTML = `
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card overflow-auto">
+                        <img src="../static/images/${recipe.images[0]}" class="card-img-top w-100 rounded" alt="${recipe.name}">
+                        ${favoriteButton}
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="../templates/recipe.html?id=${recipe.id}">${recipe.name}</a>
+                            </h5>
+                            <p class="card-text"><strong>Prep Time:</strong> ${recipe.prep_time}</p>
+                            <p class="card-text"><strong>Difficulty:</strong> ${recipe.difficulty}</p>
+                            <p class="card-text"><strong>Cuisine:</strong> ${recipe.cuisine}</p>
+                            <p class="card-text"><strong>Dietary Info:</strong> ${recipe.dietary.join(", ")}</p>
+                            <h6>Ingredients:</h6>
+                            <p>${recipe.ingredients.join(", ")}</p>
+                        </div>
+                    </div>
+                </div>`;
+              
+              listContainer.innerHTML += cardHTML;
             });
           })
           .catch((error) => {

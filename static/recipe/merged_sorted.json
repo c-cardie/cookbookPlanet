@@ -9,7 +9,7 @@
     "cuisine": "American",
     "prep_time": "20 min",
     "difficulty": "Easy",
-    "images": ["classic_pancakes_1.webp", "classic_pancakes_2.webp"],
+    "images": ["classic_pancakes_1.webp", "classic_pancakes_2.webp", "classic_pancakes_3.webp", "classic_pancakes_4.webp"],
     "steps": [
       "In a large mixing bowl, combine flour, sugar, and baking powder.",
       "Create a well in the center and pour in milk and eggs.",
