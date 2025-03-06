@@ -21,11 +21,6 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    />
-
     <style>
       .card-img-top {
         height: 200px; /* Adjust height as needed */
@@ -216,10 +211,15 @@
             data.forEach((recipe, index) => {
               listContainer.innerHTML += `
                           <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                              <div class="card">
+                              <div class="card overflow-auto">
                                   <img src="../static/images/${
                                     recipe.images[0]
                                   }" class="card-img-top w-100 rounded" alt="${recipe.name}">
+                                  <button type="button" class="btn btn-outline-light position-absolute top-0 m-2 float-left bg-transparent border-2" onclick="toggleFavorite(${recipe.id})" data-toggle="button" aria-pressed="false" autocomplete="off"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                                    </svg>
+                                  </button>
                                   <div class="card-body">
                                       <h5 class="card-title">
                                           <a href="../templates/recipe.html?id=${

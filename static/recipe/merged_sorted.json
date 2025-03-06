@@ -701,11 +701,7 @@
     "prep_time": "30 min",
     "difficulty": "Moderate",
     "images": [
-      "sweet_potato_stew_1.webp",
-      "sweet_potato_stew_2.webp",
-      "sweet_potato_stew_3.webp",
-      "sweet_potato_stew_4.webp",
-      "sweet_potato_stew_5.webp"
+      "sweet_potato_stew_1.webp"
     ],
     "steps": [
       "Peel and cube the sweet potatoes, then set aside.",
@@ -965,10 +961,7 @@
     "prep_time": "10 min",
     "difficulty": "Easy",
     "images": [
-      "hummus_pita_chips_1.webp",
-      "hummus_pita_chips_2.webp",
-      "hummus_pita_chips_3.webp",
-      "hummus_pita_chips_4.webp"
+      "hummus_pita_chips_1.webp"
     ],
     "steps": [
       "In a food processor, combine chickpeas, tahini, lemon juice, minced garlic, and a pinch of salt.",
