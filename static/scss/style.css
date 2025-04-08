@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair Display');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Karla');
 html {
   height: 100%;
 }
@@ -38,13 +42,11 @@ html {
 
 
 #entire-page {
-  top: 0;
+  top: 10;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
-  background-color: hsl(27, 64%, 89%);
-  /*background-color: hsl(312, 64%, 89%);*/
+  background-color: #CCD5AE
 }
 
 /*Here we will insert a toggle color for light and dark mode*/
@@ -58,26 +60,199 @@ html {
 
 #header {
   height: 10vh;
-  background-color: white;
+  background-color: #CCD5AE;
 }
+
+/*Slogan*/
 #header .h1 {
-  font-family: "Lobster", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Playfair display", serif;
+  color: #5d3814;
+  font-weight: bold;
+  font-style: Italic;
 }
 
 #navy {
   width: 98%;
 }
 
+/*nav bar border*/
 #nav-container {
-  background-color: hsl(27, 64%, 89%);
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
+  background-color: #FEFAE0;
 }
 
+/*nav bar inside*/
 .navbar-light {
-  background-color: hsl(27, 64%, 89%) !important;
+  background-color: #FEFAE0 !important;
   border: none !important;
   border-width: 0 !important;
+}
+
+/*nav bar links*/
+#nav-container .nav-link {
+  color: #41521F;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#nav-container .nav-link:hover{
+  color: #A89F68;
+}
+
+
+/*creates shadow effect when nav bar links are hovered on*/
+/*
+.nav-item {
+  transition: all 300ms ease-in-out;
+}
+.nav-item:hover {
+  box-shadow: 0px 8px 30px;
+}
+*/
+
+/*search bar button*/
+.btn.btn-outline-success{
+  color: #41521F;
+  border-color: #41521F;
+}
+
+.btn.btn-outline-success:hover {
+  background-color: #A89F68;
+  border-color: #41521F;
+  color: #FEFAE0;
+}
+
+/*attempt to change the color of search button when clicked */
+.btn.btn-outline-success:active {
+  background-color: #41521F;
+  border-color: #41521F;
+  color: #FEFAE0;
+  box-shadow: 0 0 15px 5px #41521F;
+}
+
+/* Ensures you're targeting the placeholder inside the .form-control input */
+input.form-control::placeholder {
+  font-family: 'Karla', sans-serif;
+  color: #333 !important;  /* Use !important if there's a conflict */
+  font-size: 16px;
+}
+
+.card-body {
+  background-color: #FAEDCD;
+
+}
+
+/*Recipe card title...in the list*/
+.card-title a {
+  font-family: 'Lato', sans-serif;
+  text-decoration: underline;
+  color: #41521F;
+  font-weight: bold;
+  font-size: 20px; 
+}
+
+.card-title a:hover {
+  color: #A89F68;
+  font-weight: bold;
+}
+
+/*Prep time, cook time, etc*/
+.card-body p {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  color: #9c4f01;
+
+}
+
+/*"Ingredients"*/
+.card-body h6 {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #9c4f01;
+}
+
+/*Card title for individual recipe cards*/
+#individual_card .card-title {
+  font-family: 'Lato', sans-serif;
+  color: #5d3814;
+  font-weight: bold;
+}
+
+/*"Ingredients" and "Steps" text for individual recipe cards*/
+#individual_card h3 {
+  font-family: 'Lato', sans-serif;
+  color: #5d3814;
+  font-weight: bold;
+}
+
+/*Ingredients checklist for individual recipe cards*/
+#individual_card .list-unstyled {
+  font-family: 'Karla', sans-serif;
+  /*font-size: 16px;*/
+  /*font-weight: bold;*/
+  color: #9c4f01;
+}
+
+/*Steps checklist for individual recipe cards*/
+#individual_card ol {
+  font-family: 'Karla', sans-serif;
+  /*font-size: 16px;*/
+  /*font-weight: bold;*/
+  color: #9c4f01;
+}
+
+/*"Images:" on individual recipes*/
+.card.h-100 .card-title {
+  font-family: 'Lato', sans-serif;
+  color: #5d3814;;
+  font-weight: bold;
+}
+
+/*"Previous" and "Next" buttons*/
+.btn.btn-primary {
+  background-color: transparent;
+  color: #41521F;
+  border-color: #41521F;
+}
+
+.btn.btn-primary:hover {
+  background-color: #A89F68;
+  border-color: #41521F;
+  color: #FAEDCD;
+}
+
+/*
+.card.h-100 .card-title {
+  font-family: 'Lato', sans-serif;
+  color: #41521F;
+  font-weight: bold;
+}
+*/
+
+/*section that has links to all recipe books*/
+#books {
+  background-color: #FAEDCD !important;
+}
+
+/*Links to old recipe books*/
+#books a {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: #41521F;
+  text-decoration: underline;
+  font-size: 20px;
+
+}
+
+#books a:hover {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: #A89F68;
+  font-size: 20px;
+
 }
 
 #nav-list {
@@ -88,18 +263,49 @@ html {
   margin: 0; /* Remove default margin */
 }
 
-#books {
-  background-color: white !important;
+.footer {
+  background-color: #FAEDCD;
+}
+
+/*Footer message "always feel free to...*/
+.mb-2.mt-4.p {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  color: #9c4f01;
+}
+
+/*Footer links title text*/
+.col-6.col-lg-6.mb-3.sm-3 p {
+  color:  #5d3814;;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+
+/*Footer links*/
+.col-6.col-lg-6.mb-3.sm-3 a {
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: underline;
+  color: #41521F;
+}
+
+/*Footer links hover effect*/
+.col-6.col-lg-6.mb-3.sm-3 a:hover {
+  color: #A89F68;
 }
 
 @media (max-width: 991px) {
   #moto {
     display: none;
   }
+  
   #logo-container {
     width: 100%;
     justify-content: center;
   }
+  
   #navy {
     width: 100%;
     margin: 0 !important;
@@ -116,7 +322,7 @@ html {
   .navbar-collapse {
     height: 100vh !important;
     width: 100vw !important;
-    background-color: hsl(27, 64%, 89%);
+    background-color: #FEFAE0;
     position: fixed;
     top: 0 !important;
     left: 0 !important;
@@ -127,6 +333,9 @@ html {
   #card-container {
     padding-right: 0px !important;
   }
+
+
+  
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -12,6 +12,7 @@ function fetchJSONAndDisplayObject(recipeId) {
       }
 
       // Populate the recipe details
+      //The "Card Title" affects the title of the card when it is in a list
       document.getElementById("recipe-container").innerHTML = `
                 <div class="card mx-auto">
                     <img src="../static/images/${recipe.images[0]}" class="card-img-top w-100 rounded" alt="${recipe.name}">
@@ -131,7 +132,7 @@ function displayRecipe(index) {
           <!--add a class that disables the hover here:-->
           <div class="card no-hover h-100">
               <div class="card-body d-flex flex-column justify-content-between">
-                  <h3 class="card-title">Images:</h3>
+                  <h2 class="card-title">Images:</h2>
                   <div class="d-flex justify-content-center">
                       <!-- Image stays within card boundaries, with proper scaling -->
                       <img id="recipe-image" src="../static/images/${recipe.images[currentImageIndex]}" alt="${recipe.images[currentImageIndex]}" class="img-fluid rounded" style="max-width: 400px; height: auto; object-fit: cover; overflow: hidden;">
@@ -178,32 +179,4 @@ function navigateRecipe(direction) {
     window.location.href = `recipe.html?id=${recipes[newIndex].id}`;
   }
 }
-
-
-//Javascipt to update the localstorage on checkboxes (chatgpt helped with this part):
-
-function setupCheckboxStorage() {
-  document.querySelectorAll('.ingredient-checkbox, .step-checkbox').forEach((checkbox) => {
-    // Load saved state
-    if (localStorage.getItem(checkbox.id) === 'checked') {
-      checkbox.checked = true;
-    }
-
-    // Save state on change
-    checkbox.addEventListener('change', function () {
-      if (checkbox.checked) {
-        localStorage.setItem(checkbox.id, 'checked');
-      } else {
-        localStorage.removeItem(checkbox.id);
-      }
-    });
-  });
-}
-
-// Render recipe HTML
-document.getElementById('recipeContainer').innerHTML = recipeHTML;
-
-// Setup checkbox storage AFTER rendering
-setupCheckboxStorage();
-
 
