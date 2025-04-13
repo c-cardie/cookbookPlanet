@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Home</title>
+    <title>Favorites</title>
+
+
+    <!--Adding the company logo to the page itself-->
+    <link rel="icon" href="../made_photos/wp_cb.png" type="image/png">
+    
+    
     <meta
       name="description"
       content="A cookbook catalog filled with recipes to satisfy any craving."
@@ -21,8 +27,14 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <style>
+      .card-img-top {
+        height: 200px; /* Adjust height as needed */
+        object-fit: cover; /* Ensures image fills the box without stretching */
+      }
+    </style>
   </head>
-  <body>
+  <body onload="fetchRecipes()">
     <div
       class="container-fluid text-center align-middle align-self-center"
       id="entire-page"
@@ -54,7 +66,7 @@
           <div class="container-fluid justify-content-center">
             <a
               class="navbar-brand text-start invisible"
-              href="../templates/index.html"
+              href="/templates/index.html"
               >Home</a
             >
             <button
@@ -96,28 +108,25 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../templates/favorites.html"
+                  <a class="nav-link" href="#"
                     >Favorites</a
                   >
                 </li>
-                <!--
-                <li class="nav-item">
-                  <a class="nav-link" href="#"
-                    >Account (not implemented)</a
-                  >
-                </li>-->
               </ul>
-              <form class="d-flex ms-auto" onsubmit="redirectToSearch(event)">
+              <form class="d-flex ms-auto" id="SearchForm">
                 <input
 
                   type="text"
                   id="searchInput"
+                  onkeyup="searchFavoriteRecipes()"
                   class="form-control me-2"
                   type="search"
                   placeholder="Search ..."
                   aria-label="Search"
+                  
                 />
-                <button class="btn btn-outline-success" type="submit">
+                <!---<button class="btn btn-outline-success" type="submit">-->
+                <button class="btn btn-outline-success">
                   Search
                 </button>
               </form>
@@ -125,10 +134,12 @@
           </div>
         </nav>
       </div>
-      <!--Recipe/middle of the page-->
-      <div class="col-12 center text-center mr-0 pr-0 justify-items-center">
-        <!---->
-        <div id="recipe-container"></div>
+      <!--All recipes-->
+      <div class="container">
+        <div id="recipe-list" class="row">
+          <!-- Ensure row wrapper is here -->
+          <!-- Recipe links will be generated here -->
+        </div>
       </div>
     </div>
     <!--footer-->
@@ -191,14 +202,9 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="../templates/script.js"></script>
-    <script>
-      let recipes = [];
-      let currentRecipeIndex = 0;
-      window.onload = fetchRecipes;
-    </script>
 
-    <!---->
-    <script src="../JavaScripts/recipe.js"></script>
+    <!--here is the link that makes the search and filter-->
+    <script src="../JavaScripts/favorites_script.js"></script>
+  
   </body>
 </html>

@@ -70,7 +70,10 @@ function displayRecipe(index) {
     <!-- Recipe Info -->
     <div class="row p-3 d-flex w-100">
       <div class="col-lg-8 col-md-8 p-3">
-          <div class="card" id="individual_card">
+          
+          <!--Here we change the class of the card so that it does not hover in this case-->
+          <div class="card no-hover" id="individual_card">
+    
               <div class="card-body text-left">
                   <h2 class="card-title">${recipe.name}</h2>
                   <p class="card-text"><strong>Category:</strong> ${recipe.category}</p>
@@ -79,20 +82,54 @@ function displayRecipe(index) {
                   <p class="card-text"><strong>Cuisine:</strong> ${recipe.cuisine}</p>
                   <p class="card-text"><strong>Dietary Info:</strong> ${recipe.dietary.join(", ")}</p>
                   <h3>Ingredients:</h3>
+
+                  <!--Here we add a local storage to keep the checkboxes
                   <ul class="list-unstyled">
-                      ${recipe.ingredients.map((i) => `<li class="pl-3"><input type="checkbox" class="form-check-input"> ${i}</li>`).join("")}
+
+                      
+
+                      ${recipe.ingredients.map((i) => `<li class="pl-3"><input type="checkbox" class="form-check-input" id="myCheckbox"> ${i}</li>`).join("")}
                   </ul>
+
                   <h3>Steps:</h3>
                   <ol>
-                      ${recipe.steps.map((s) => `<li class="pl-3"><input type="checkbox" class="form-check-input" /> ${s}</li>`).join("")}
+                      ${recipe.steps.map((s) => `<li class="pl-3"><input type="checkbox" class="form-check-input" id="myCheckbox" /> ${s}</li>`).join("")}
+                  </ol>-->
+
+
+
+
+                  <!--chatgpt code used here:-->
+
+                  <ul>
+                    ${recipe.ingredients.map((i, index) => 
+                      `<li class="pl-3">
+                        <input type="checkbox" class="form-check-input ingredient-checkbox" id="ingredient-${index}" value="${i}">
+                        ${i}
+                      </li>`
+                    ).join("")}
+                  </ul>
+
+                  <h3>Steps:</h3>
+                  <ol>
+                    ${recipe.steps.map((s, index) => 
+                      `<li class="pl-3">
+                        <input type="checkbox" class="form-check-input step-checkbox" id="step-${index}" value="${s}">
+                        ${s}
+                      </li>`
+                    ).join("")}
                   </ol>
+
+
               </div>
           </div>
       </div>
 
       <!-- Images Section -->
       <div class="col-lg-4 col-md-4 col-sm-12 p-3">
-          <div class="card h-100">
+
+          <!--add a class that disables the hover here:-->
+          <div class="card no-hover h-100">
               <div class="card-body d-flex flex-column justify-content-between">
                   <h3 class="card-title">Images:</h3>
                   <div class="d-flex justify-content-center">
@@ -141,3 +178,32 @@ function navigateRecipe(direction) {
     window.location.href = `recipe.html?id=${recipes[newIndex].id}`;
   }
 }
+
+
+//Javascipt to update the localstorage on checkboxes (chatgpt helped with this part):
+
+function setupCheckboxStorage() {
+  document.querySelectorAll('.ingredient-checkbox, .step-checkbox').forEach((checkbox) => {
+    // Load saved state
+    if (localStorage.getItem(checkbox.id) === 'checked') {
+      checkbox.checked = true;
+    }
+
+    // Save state on change
+    checkbox.addEventListener('change', function () {
+      if (checkbox.checked) {
+        localStorage.setItem(checkbox.id, 'checked');
+      } else {
+        localStorage.removeItem(checkbox.id);
+      }
+    });
+  });
+}
+
+// Render recipe HTML
+document.getElementById('recipeContainer').innerHTML = recipeHTML;
+
+// Setup checkbox storage AFTER rendering
+setupCheckboxStorage();
+
+

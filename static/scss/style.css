@@ -3,13 +3,54 @@ html {
   height: 100%;
 }
 
+/*Use this section for button hover effects*/
+
+/*css used from chatgpt*/
+.card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarges the card */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+
+.no-hover:hover {
+  transform: none !important;
+  box-shadow: none !important;
+
+}
+
+
+
+
+/* add highlight to search */
+.highlight {
+  background-color: hsla(244, 100%, 50%, 0.321); /* or any color you'd like */
+  color: black;
+}
+
+
+
+
+
+
+
+
 #entire-page {
   top: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
   background-color: hsl(27, 64%, 89%);
+  /*background-color: hsl(312, 64%, 89%);*/
 }
+
+/*Here we will insert a toggle color for light and dark mode*/
+
+
+
 
 #footer-bottom {
   margin-top: auto; /* Pushes the footer to the bottom */

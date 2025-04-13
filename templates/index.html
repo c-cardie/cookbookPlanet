@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Home</title>
+
+    <!--Adding the company logo to the page itself-->
+    <link rel="icon" href="../made_photos/wp_cb.png" type="image/png">
+    
+    
     <meta
       name="description"
       content="A cookbook catalog filled with recipes to satisfy any craving."
@@ -30,7 +35,7 @@
       }
     </style>
   </head>
-  <body>
+  <body onload="fetchRecipes()">
     <div
       class="container-fluid text-center align-middle align-self-center"
       id="entire-page"
@@ -86,6 +91,7 @@
               >
                 <button
                   class="navbar-toggler invisible"
+                  
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#navbarSupportedContent"
@@ -104,23 +110,26 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"
-                    >Favorites (not implemented)</a
+                  <a class="nav-link" href="../templates/favorites.html"
+                    >Favorites</a
                   >
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"
-                    >Account (not implemented)</a
-                  >
-                </li>
+
               </ul>
-              <form class="d-flex ms-auto">
+
+              <!---->
+              <form class="d-flex ms-auto" onsubmit="redirectToSearch(event)">
                 <input
+
+                  type="text"
+                  id="searchInput"
                   class="form-control me-2"
                   type="search"
-                  placeholder="Search (not implemented)"
+                  placeholder="Search ..."
                   aria-label="Search"
                 />
+
+                
                 <button class="btn btn-outline-success" type="submit">
                   Search
                 </button>
@@ -130,19 +139,30 @@
         </nav>
       </div>
       <!--Recipe of the day-->
-      <div class="row pb-4 pl-5 pr-5">
+      <div class="row bt-6 pb-4 pl-5 pr-5">
         <div class="col-lg-9 col-md-9 col-sm-12 p-0 pr-4" id="card-container">
           <div id="recipe-container">
+
             <!-- Recipe details will be displayed here -->
           </div>
         </div>
+
+        <!--This block will be for the title -->
+
+
         <div class="col-lg-3 col-md-3 col-sm-12 rounded" id="books">
+          <br>
+          <p>Here are our anual Cookbooks:</p>
           <ul class="list-unstyled pt-3">
-            <li><a href="#">Cookbook of 2025 (not implemented)</a></li>
-            <li><a href="#">Cookbook of 2024 (not implemented)</a></li>
-            <li><a href="#">Cookbook of 2023 (not implemented)</a></li>
-            <li><a href="#">Cookbook of 2022 (not implemented)</a></li>
-            <li><a href="#">Cookbook of 2021 (not implemented)</a></li>
+            <li><a href="../pdfs/ck_25.pdf" target="_blank">Cookbook of 2025</a></li>
+            <br>
+            <li><a href="../pdfs/ck_24.pdf" target="_blank">Cookbook of 2024</a></li>
+            <br>
+            <li><a href="../pdfs/ck_23.pdf" target="_blank">Cookbook of 2023</a></li>
+            <br>
+            <li><a href="../pdfs/ck_22.pdf" target="_blank">Cookbook of 2022</a></li>
+            <br>
+            <li><a href="../pdfs/ck_21.pdf" target="_blank">Cookbook of 2021</a></li>
           </ul>
         </div>
       </div>
@@ -180,15 +200,11 @@
               >
             </li>
             <li>
-              <a class="nav-link h6" href="#"
-                >Favorites (not implemented)</a
+              <a class="nav-link h6" href="../templates/favorites.html"
+                >Favorites</a
               >
             </li>
-            <li>
-              <a class="nav-link h6" href="#"
-                >Account (not implemented)</a
-              >
-            </li>
+
           </ul>
         </div>
       </div>
@@ -212,11 +228,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="../templates/script.js"></script>
-    <script>
-      // Call the function to fetch JSON and display the object with ID 1
-      window.onload = function () {
-        fetchJSONAndDisplayObject(6); // Fetch object with ID 1
-      };
-    </script>
+
+    <!--here is the link that makes the filter and search process-->
+    <script src="../JavaScripts/index_script.js"></script>
+
   </body>
 </html>
