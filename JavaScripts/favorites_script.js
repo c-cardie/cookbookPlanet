@@ -220,10 +220,9 @@ function searchFavoriteRecipes(query) {
 
     //displayRecipes(filteredRecipes); // Show the search results
     displayRecipesWithHighlight(filteredRecipes,input);
+
+
 }
-
-
-      
 
 
       //window.onload = fetchRecipes;
@@ -241,18 +240,20 @@ function searchFavoriteRecipes(query) {
           }
       
 
-          // Prevent form submit from reloading page
-          document.getElementById("searchForm").addEventListener("submit", function(event) {
-              event.preventDefault();  // Stops the reload
-              searchRecipes();         // Run search function dynamicall
-          });
+          document.getElementById('searchForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            searchRecipes();  // or searchFavoriteRecipes() if you're on the favorites page
+        
+            // Collapse the navbar if it's open
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            if (navbarCollapse.classList.contains('show')) {
+                const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse)
+                    || new bootstrap.Collapse(navbarCollapse, { toggle: false });
+                bsCollapse.hide();
+            }
+        });
+        
 
       }
 
-      document.getElementById('SearchForm').addEventListener('submit', function(e){
-        e.preventDefault();
-        searchRecipes();  
-
-        
-      });
 

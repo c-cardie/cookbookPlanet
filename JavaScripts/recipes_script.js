@@ -309,16 +309,25 @@ function displayRecipesWithHighlight(recipes, query) {
           document.getElementById("searchForm").addEventListener("submit", function(event) {
               event.preventDefault();  // Stops the reload
               searchRecipes();         // Run search function dynamicall
+          
+
+          
           });
 
       }
-
+/**/
       document.getElementById('SearchForm').addEventListener('submit', function(e){
         e.preventDefault();
         searchRecipes();  
+            //This section collapses the navbar in mobile mode if prompted with a search (from chatgpt)
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            if(navbarCollapse.classList.contains('show')){
+              const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                toggle: true
+              });
+            }
 
-        
-      });
+      }); 
 
 
     //These two document functions connect the buttons at the bottom of the 
