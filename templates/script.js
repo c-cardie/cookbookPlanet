@@ -82,7 +82,7 @@ function displayRecipe(index) {
                   <p class="card-text"><strong>Difficulty:</strong> ${recipe.difficulty}</p>
                   <p class="card-text"><strong>Cuisine:</strong> ${recipe.cuisine}</p>
                   <p class="card-text"><strong>Dietary Info:</strong> ${recipe.dietary.join(", ")}</p>
-                  <h3>Ingredients:</h3>
+                  <h2>Ingredients:</h2>
 
                   <!--Here we add a local storage to keep the checkboxes
                   <ul class="list-unstyled">
@@ -97,9 +97,6 @@ function displayRecipe(index) {
                       ${recipe.steps.map((s) => `<li class="pl-3"><input type="checkbox" class="form-check-input" id="myCheckbox" /> ${s}</li>`).join("")}
                   </ol>-->
 
-
-
-
                   <!--chatgpt code used here:-->
 
                   <ul>
@@ -111,7 +108,8 @@ function displayRecipe(index) {
                     ).join("")}
                   </ul>
 
-                  <h3>Steps:</h3>
+                  <!--This is the Title "Steps"-->
+                  <h2>Steps:</h2>
                   <ol>
                     ${recipe.steps.map((s, index) => 
                       `<li class="pl-3">
