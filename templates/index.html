@@ -1,25 +1,28 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Ensures proper character encoding, supporting a wide range of characters.-->
+    <meta charset="UTF-8" /> 
+    <!--Ensures responsive design by making the layout adapt to different screen sizes.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <!--Ensures compatibility with the latest rendering engine in Internet Explorer.-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Home</title>
-
-    <!--Adding the company logo to the page itself-->
-    <link rel="icon" href="../made_photos/wp_cb.png" type="image/png">
-    
-    
+    <!--Provides a short description for search engines and social media.-->
     <meta
       name="description"
       content="A cookbook catalog filled with recipes to satisfy any craving."
     />
+    <!--Specifies the authors of the webpage.-->
     <meta name="author" content="Clarie Cardie, Evan Whitmer, Thor Pilegaard" />
+    <!--Helps with search engine optimization (SEO).-->
     <meta
       name="keywords"
       content="HTML, metadata, cook, book, cookbook, recipes, web development"
     />
+    <!--inks a custom SCSS (or compiled CSS) file from the project directory for styling.-->
     <link rel="stylesheet" href="../static/scss/style.css" />
+    <!--Links the Bootstrap 4.3.1 framework for pre-designed UI components-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
@@ -27,11 +30,16 @@
       crossorigin="anonymous"
     />
     <style>
+      /*class card-img-top*/
       .card-img-top {
-        height: 400px; /* Adjust the height as needed */
-        object-fit: cover; /* Ensures the image fits well without stretching */
-        width: 100%; /* Keeps the image responsive */
-        border-radius: 10px; /* Optional: adds rounded corners */
+        /*Forces the image to be 400 pixels tall*/
+        height: 400px;
+        /*Ensures the image covers the assigned space without distortion, cropping if necessary*/
+        object-fit: cover;
+        /*Makes the image fully responsive, expanding to fill its parent container*/
+        width: 100%;
+        /*Rounds the corners of the image for a smoother appearance.*/
+        border-radius: 10px;
       }
     </style>
   </head>
@@ -45,11 +53,14 @@
           class="col-lg-4 col-md-4 col-sm-12 justify-content-center"
           id="logo-container"
         >
+      
+          <!--cookie moon version-->
           <img
             class="img-fluid float-start"
             alt="food-planet-logo"
-            src="../made_photos/Cook_book_planet.png"
+            src="../made_photos/Cookbook Planet V3.png" 
           />
+      
         </div>
         <div
           class="col-lg-8 col-md-8 col-sm-0 d-flex justify-content-center align-items-center"
@@ -101,7 +112,7 @@
                 >
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <li class="nav-item none" id="nav-home">
+                <li class="nav-item none" id="nav-home" >
                   <a class="nav-link" href="../templates/index.html">Home</a>
                 </li>
                 <li class="nav-item">
@@ -138,9 +149,28 @@
           </div>
         </nav>
       </div>
+      <div class="row bt-6 pb-4 pl-5 pr-5 mt-5" style="  text-align: left !important;">
+        <h2>Who We Are </h2>
+        <p>We’re a close-knit team of creatives, developers, and culinary enthusiasts who share two big passions: building beautiful, user-friendly websites and making truly delicious food. With backgrounds in web design, user experience, and of course, countless hours spent cooking (and eating!) in our own kitchens, we came together with a simple idea—to bring people together around food.</p>
+        <p>For us, cooking isn’t just about feeding ourselves. It’s about expression, tradition, connection, and joy. We believe a great recipe can be a conversation starter, a memory maker, or even a way to travel the world without leaving your home. Our team pours that love into every page, creating a space that’s as easy to navigate as it is inspiring to explore.</p>
+      </div>
+      <div class="row bt-6 pb-4 pl-5 pr-5 mt-2" style="  text-align: left !important;">
+        <h2>Why "Cookbook Planet?" </h2>
+        <p>Planets are vast, full of mystery, beauty, and life—just like the world of cooking. Cookbook Planet is our way of inviting you on a culinary journey across continents, cultures, and tastes. Every "orbit" of our site offers a different experience, whether it’s cozy comfort food, bold global flavors, or fun kitchen experiments for the whole family.</p>
+        <p>We chose the name because it captures the sense of wonder and endless possibility we feel about food. Much like a planet, our collection is ever-expanding, full of unique recipes and personal favorites. And we wanted a name that was playful and imaginative—something that would excite curious kids, inspire home cooks, and welcome food lovers of all ages with open arms (and open kitchens). 😊</p>
+      </div>
+      <div class="row bt-6 pb-4 pl-5 pr-5 mt-2" style="  text-align: left !important;">
+        <h2>Our Purpose </h2>
+        <p>Our purpose is simple: to make cooking more accessible, joyful, and inspiring for everyone. We believe in the transformative power of a good meal—not just how it nourishes the body, but how it feeds the soul. A warm bowl of soup on a cold night. The smell of garlic sizzling in olive oil. A passed-down family recipe that tastes like childhood. These aren’t just meals—they’re moments.</p>
+        <p>We want to help people create those moments in their own kitchens. Whether you’re new to cooking or already a confident chef, Cookbook Planet is here to guide you through the wonders of food. With clear instructions, beautiful design, and a wide range of cuisines and difficulty levels, we’re making it easier than ever to find the perfect recipe for any appetite, any occasion, and any skill level.</p>
+        <p>So come explore, experiment, and fall in love with cooking all over again. Because food isn’t just fuel—it’s one of the greatest joys life has to offer.</p>
+      </div>
       <!--Recipe of the day-->
       <div class="row bt-6 pb-4 pl-5 pr-5">
         <div class="col-lg-9 col-md-9 col-sm-12 p-0 pr-4" id="card-container">
+          <div id="recipe of the day">
+            <h2>Recipe of the day</h2>
+          </div>
           <div id="recipe-container">
 
             <!-- Recipe details will be displayed here -->
@@ -152,7 +182,7 @@
 
         <div class="col-lg-3 col-md-3 col-sm-12 rounded" id="books">
           <br>
-          <p>Here are our anual Cookbooks:</p>
+          <h2>Here are our anual Cookbooks:</h2>
           <ul class="list-unstyled pt-3">
             <li><a href="../pdfs/ck_25.pdf" target="_blank">Cookbook of 2025</a></li>
             <br>
@@ -167,6 +197,7 @@
         </div>
       </div>
     </div>
+    <div class="footer">
     <!--footer-->
     <div class="container py-4 py-md-12 px-4 px-md-12 text-body-secondary">
       <div class="row">
@@ -174,22 +205,24 @@
           <a
             class="d-inline-flex align-items-center mb-1 text-body-emphasis text-decoration-none"
           >
+            <!--cookie moon version-->
             <img
               style="width: 180px; height: 60px"
               alt="food-planet-logo"
-              src="../made_photos/Cook_book_planet.png"
+              src="../made_photos/Cookbook Planet V3.png"
             />
+          
           </a>
           <ul class="list-unstyled small">
             <li class="mb-2 mt-4 p">
               Always feel free to reach out to us about any concerns or
               questions relating to recipes found on this website.
             </li>
-            <li class="mb-2 mt-4 p">Last Updated: March 3rd, 2025</li>
+            <li class="mb-2 mt-4 p">Last Updated: April 15th, 2025</li>
           </ul>
         </div>
         <div class="col-6 col-lg-6 mb-3 sm-3">
-          <p class="h5">Links</p>
+          <h2 class="h2">Links</h2>
           <ul class="list-unstyled">
             <li>
               <a class="nav-link h6" href="../templates/index.html">Home</a>
@@ -209,6 +242,7 @@
         </div>
       </div>
     </div>
+  </div>
 
     <!--bootstrap JavaScript dependencies are included at the bottom of pages before the closing body tag-->
     <script
