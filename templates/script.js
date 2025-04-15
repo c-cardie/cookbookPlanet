@@ -190,8 +190,6 @@ function navigateRecipe(direction) {
   }
 }
 
-<<<<<<< HEAD
-=======
 
 //Javascipt to update the localstorage on checkboxes (chatgpt helped with this part):
 function savecheckboxes(){
@@ -232,4 +230,3 @@ document.getElementById('recipeContainer').innerHTML = recipeHTML;
 setupCheckboxStorage();
 
 
->>>>>>> 74eea3d (Thors_hearts)
