@@ -1,4 +1,6 @@
 
+      
+      /*
       function toggleFavorite(keyName, ID) {
         // Retrieve existing data or initialize an empty object
         let data = JSON.parse(localStorage.getItem("appData")) || {};
@@ -25,7 +27,65 @@
         localStorage.setItem("appData", JSON.stringify(data));
     
         // console.log("Updated localStorage:", data.favorites);
-    }
+        toggleFavorite('favorites', recipe.id, showFavoriteRecipes);
+    }*/
+
+        function toggleFavorite(keyName, ID, callback = null) {
+            let data = JSON.parse(localStorage.getItem("appData")) || {};
+        
+            if (!data[keyName]) {
+                data[keyName] = [];
+            }
+        
+            const idStr = ID.toString();
+            const index = data[keyName].indexOf(ID);
+        
+            const isNowFavorite = index === -1;
+        
+            if (isNowFavorite) {
+                data[keyName].push(ID);
+            } else {
+                data[keyName].splice(index, 1);
+            }
+        
+            localStorage.setItem("appData", JSON.stringify(data));
+        
+            // Immediately update heart icon
+            const heartIcon = document.querySelector(`svg.heart-icon[data-id="${ID}"]`);
+            if (heartIcon) {
+                heartIcon.outerHTML = isNowFavorite
+                    ? `
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="16" height="16" 
+                        fill="currentColor" 
+                        class="bi bi-heart-fill heart-icon" 
+                        viewBox="0 0 16 16" 
+                        data-id="${ID}">
+                      <path d="M8 1.314C12.438-3.248 23.534 4.735 8 15 
+                               -7.534 4.736 3.562-3.248 8 1.314"/>
+                    </svg>`
+                    : `
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="16" height="16" 
+                        fill="currentColor" 
+                        class="bi bi-heart heart-icon" 
+                        viewBox="0 0 16 16" 
+                        data-id="${ID}">
+                      <path d="m8 2.748-.717-.737C5.6.281 2.514 3.138 
+                               3.28 6.027c.356 1.319 1.566 2.59 
+                               3.319 3.993 1.753-1.403 2.963-2.674 
+                               3.319-3.993.766-2.89-2.32-5.746-4.003-2.986L8 2.748zM8 15C-7.333 
+                               4.868 3.279-3.04 7.824 1.143a3.12 
+                               3.12 0 0 1 .176.187 3.12 
+                               3.12 0 0 1 .176-.187C12.72-3.042 
+                               23.333 4.867 8 15z"/>
+                    </svg>`;
+            }
+        
+            // Optional: trigger a callback if needed (e.g. refresh view)
+            if (callback) callback();
+        }
+        
 
     function inFavorite(keyName, ID) {
       let data = JSON.parse(localStorage.getItem("appData")) || {};
@@ -145,7 +205,7 @@
         listContainer.innerHTML += cardHTML;
     });
 }
-
+/*
 
 function displayRecipesWithHighlight(recipes, query) {
     const listContainer = document.getElementById("recipe-list");
@@ -189,8 +249,86 @@ function displayRecipesWithHighlight(recipes, query) {
 
         listContainer.innerHTML += cardHTML;
     });
-}
+}*/
 
+function displayRecipesWithHighlight(recipes, query) {
+    const listContainer = document.getElementById("recipe-list");
+    listContainer.innerHTML = "";  // Clear previous results
+  
+    recipes.forEach((recipe) => {
+        const highlightText = (text) => {
+            const regex = new RegExp(`(${query})`, 'gi');
+            return text.replace(regex, '<span class="highlight">$1</span>');
+        };
+  
+        const name = highlightText(recipe.name);
+        const cuisine = highlightText(recipe.cuisine);
+        const difficulty = highlightText(recipe.difficulty);
+        const category = highlightText(recipe.category);
+        const season = highlightText(recipe.season);
+        const prepTime = highlightText(recipe.prep_time);
+        const ingredients = highlightText(recipe.ingredients.join(", "));
+        const dietary = highlightText(recipe.dietary.join(", "));
+  
+        const isFavorite = inFavorite('favorites', recipe.id);
+  
+                const favoriteIcon = isFavorite
+                ? `
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                       width="16" height="16" 
+                       fill="currentColor" 
+                       class="bi bi-heart-fill heart-icon" 
+                       viewBox="0 0 16 16" 
+                       data-id="${recipe.id}">
+                    <path d="M8 1.314C12.438-3.248 23.534 4.735 8 15 
+                             -7.534 4.736 3.562-3.248 8 1.314"/>
+                  </svg>`
+                : `
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                       width="16" height="16" 
+                       fill="none" stroke="red" stroke-width="1.5" 
+                       class="bi bi-heart heart-icon" 
+                       viewBox="0 0 16 16" 
+                       data-id="${recipe.id}">
+                    <path d="M8 1.314C12.438-3.248 23.534 4.735 8 15 
+                             -7.534 4.736 3.562-3.248 8 1.314"/>
+                  </svg>`;
+            
+  
+        const favoriteButton = `
+            <button type="button"
+                    class="btn btn-outline-danger position-absolute top-0 m-2 float-left bg-transparent border-2"
+                    onclick="toggleFavorite('favorites', ${recipe.id}, () => searchFavoriteRecipes('${query}'))"
+                    aria-pressed="${isFavorite}">
+                ${favoriteIcon}
+            </button>
+        `;
+  
+        const cardHTML = `
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card overflow-auto position-relative">
+                    <img src="../static/images/${recipe.images[0]}" class="card-img-top w-100 rounded" alt="${recipe.name}">
+                    ${favoriteButton}
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="../templates/recipe.html?id=${recipe.id}">${name}</a>
+                        </h5>
+                        <p class="card-text"><strong>Prep Time:</strong> ${prepTime}</p>
+                        <p class="card-text"><strong>Difficulty:</strong> ${difficulty}</p>
+                        <p class="card-text"><strong>Cuisine:</strong> ${cuisine}</p>
+                        <p class="card-text"><strong>Category:</strong> ${category}</p>
+                        <p class="card-text"><strong>Season:</strong> ${season}</p>
+                        <p class="card-text"><strong>Dietary Info:</strong> ${dietary}</p>
+                        <h6>Ingredients:</h6>
+                        <p>${ingredients}</p>
+                    </div>
+                </div>
+            </div>`;
+  
+        listContainer.innerHTML += cardHTML;
+    });
+  }
+  
 
 
 
@@ -220,10 +358,9 @@ function searchFavoriteRecipes(query) {
 
     //displayRecipes(filteredRecipes); // Show the search results
     displayRecipesWithHighlight(filteredRecipes,input);
+
+
 }
-
-
-      
 
 
       //window.onload = fetchRecipes;
@@ -241,18 +378,20 @@ function searchFavoriteRecipes(query) {
           }
       
 
-          // Prevent form submit from reloading page
-          document.getElementById("searchForm").addEventListener("submit", function(event) {
-              event.preventDefault();  // Stops the reload
-              searchRecipes();         // Run search function dynamicall
-          });
+          document.getElementById('searchForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            searchRecipes();  // or searchFavoriteRecipes() if you're on the favorites page
+        
+            // Collapse the navbar if it's open
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            if (navbarCollapse.classList.contains('show')) {
+                const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse)
+                    || new bootstrap.Collapse(navbarCollapse, { toggle: false });
+                bsCollapse.hide();
+            }
+        });
+        
 
       }
 
-      document.getElementById('SearchForm').addEventListener('submit', function(e){
-        e.preventDefault();
-        searchRecipes();  
-
-        
-      });
 

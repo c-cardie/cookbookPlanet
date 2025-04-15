@@ -51,6 +51,7 @@ function fetchRecipes() {
 
       if (currentRecipeIndex !== -1) {
         displayRecipe(currentRecipeIndex);
+        savecheckboxes();
       } else {
         document.getElementById("recipe-container").innerHTML =
           "<p>Recipe not found.</p>";
@@ -62,6 +63,8 @@ function fetchRecipes() {
 let currentImageIndex = 0;
 
 function displayRecipe(index) {
+  
+
   const recipe = recipes[index];
   const container = document.getElementById("recipe-container");
 
@@ -99,7 +102,7 @@ function displayRecipe(index) {
 
                   <!--chatgpt code used here:-->
 
-                  <ul>
+                  <ul class="list-unstyled">
                     ${recipe.ingredients.map((i, index) => 
                       `<li class="pl-3">
                         <input type="checkbox" class="form-check-input ingredient-checkbox" id="ingredient-${index}" value="${i}">
@@ -163,6 +166,15 @@ function displayRecipe(index) {
       updateImage();
     });
   }
+
+
+
+
+
+
+
+
+  
 }
 
 function navigateRecipe(direction) {
@@ -177,4 +189,44 @@ function navigateRecipe(direction) {
     window.location.href = `recipe.html?id=${recipes[newIndex].id}`;
   }
 }
+
+
+//Javascipt to update the localstorage on checkboxes (chatgpt helped with this part):
+function savecheckboxes(){
+
+    document.addEventListener("change", function (e) {
+      if (e.target.classList.contains("ingredient-checkbox") || e.target.classList.contains("step-checkbox")) {
+        const id = e.target.id;
+        const checked = e.target.checked;
+        
+        // Get current saved state or create a new object
+        let savedState = JSON.parse(localStorage.getItem("checkboxStates")) || {};
+
+        // Update the state
+        savedState[id] = checked;
+
+        // Save back to localStorage
+        localStorage.setItem("checkboxStates", JSON.stringify(savedState));
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      let savedState = JSON.parse(localStorage.getItem("checkboxStates")) || {};
+
+      // Loop through saved checkboxes and re-check them
+      Object.keys(savedState).forEach(id => {
+        const checkbox = document.getElementById(id);
+        if (checkbox) {
+          checkbox.checked = savedState[id];
+        }
+      });
+    });
+
+}
+// Render recipe HTML
+document.getElementById('recipeContainer').innerHTML = recipeHTML;
+
+// Setup checkbox storage AFTER rendering
+setupCheckboxStorage();
+
 
