@@ -96,7 +96,7 @@ function displayRecipe(index) {
                   </ul>
 
                   <h3>Steps:</h3>
-                  <ol>
+                  <ol id="list_steps">
                       ${recipe.steps.map((s) => `<li class="pl-3"><input type="checkbox" class="form-check-input" id="myCheckbox" /> ${s}</li>`).join("")}
                   </ol>-->
 

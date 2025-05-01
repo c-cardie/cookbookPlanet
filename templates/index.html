@@ -16,7 +16,7 @@
     <!--Font awsome for the timer icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-
+    
     
     <meta
       name="description"
@@ -131,9 +131,32 @@
                     <button id="darkModeToggle" class="btn btn-sm btn-secondary ms-2">
                       Toggle Dark Mode
                     </button>
+
+                    <!--Timer:
+
                     <button onclick="openTimerTab()" class="btn btn-sm ms-2 custom-timer-button" title="Open Timer">
                         <i class="fas fa-clock"></i>
+                    </button>-->
+
+                    <!-- Floating Timer Button -->
+                    <button id="openTimerBtn" class="btn btn-sm btn-success">
+                      <i class="fas fa-clock"></i> Timer
                     </button>
+
+                    <!-- Timer Widget -->
+                    <div id="floatingTimer">
+                      <div class="timer-header">
+                        <span>⏱ Timer</span>
+                        <button id="closeTimerBtn">&times;</button>
+                      </div>
+                      <div class="timer-body">
+                        <input type="number" id="timerMinutes" placeholder="Minutes" min="0">
+                        <button onclick="startTimer()">Start</button>
+                        <button onclick="resetTimer()">Reset</button>
+                        <div id="timerDisplay">00:00</div>
+                      </div>
+                    </div>
+
 
 
                     <li class="nav-item none" id="nav-home" >
@@ -239,9 +262,10 @@
           >
             <!--cookie moon version-->
             <img
-              style="width: 180px; height: 60px"
+            
+              
               alt="food-planet-logo"
-              src="../made_photos/Cookbook Planet V3.png"
+              src="../made_photos/Cookie_footer.png"
             />
           
           </a>

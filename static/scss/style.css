@@ -10,19 +10,30 @@
   color: #f0f0f0;
 }
 
+
 /**/.dark-mode #header,
 .dark-mode #entire-page {
   background-color: #2a2a2a !important;
 }
 
+
+/*card darkener*/
 .dark-mode .card-body {
-  background-color: #333 !important;
+  background-color: #54785b !important;
 }
+
+/*card text darkener*/
+.dark-mode .card-body text-left,
+.dark-mode #list_steps {
+  background-color: #f0f0f0 !important;
+}
+
 
 
 /*nav bar */
 .dark-mode #nav-container,
-.dark-mode .navbar-light {
+.dark-mode .navbar-light,
+.dark-mode .btn.btn-primary {
   background-color: #a6b672 !important;
 }
 
@@ -59,7 +70,57 @@
 
 
 
+/*===========This section is for the timer======================*/
+#openTimerBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
 
+#floatingTimer {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  width: 250px;
+  background-color: #fff;
+  border: 2px solid #41521F;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: 15px;
+  z-index: 1000;
+  display: none;
+}
+
+.timer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.timer-header button {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.timer-body input,
+.timer-body button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 6px;
+  font-size: 16px;
+}
+
+#timerDisplay {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+/*=================================================*/
 
 
 

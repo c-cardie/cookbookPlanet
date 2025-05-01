@@ -53,3 +53,50 @@
         );
       }
 
+      //This section is for the new timer alert 
+      let countdown;
+      let alarmSound = new Audio("https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg"); // Replace with your sound path
+
+      document.getElementById('openTimerBtn').onclick = () => {
+        document.getElementById('floatingTimer').style.display = 'block';
+      };
+
+      document.getElementById('closeTimerBtn').onclick = () => {
+        document.getElementById('floatingTimer').style.display = 'none';
+        resetTimer(); // stop timer and alarm
+      };
+
+      function startTimer() {
+        const minutes = parseInt(document.getElementById('timerMinutes').value);
+        if (isNaN(minutes) || minutes < 0) return;
+
+        let time = minutes * 60;
+        updateDisplay(time);
+
+        clearInterval(countdown);
+        countdown = setInterval(() => {
+          time--;
+          updateDisplay(time);
+          if (time <= 0) {
+            clearInterval(countdown);
+            alarmSound.loop = true;
+            alarmSound.play();
+          }
+        }, 1000);
+      }
+
+      function resetTimer() {
+        clearInterval(countdown);
+        document.getElementById('timerDisplay').textContent = '00:00';
+        alarmSound.pause();
+        alarmSound.currentTime = 0;
+      }
+
+      function updateDisplay(seconds) {
+        const min = String(Math.floor(seconds / 60)).padStart(2, '0');
+        const sec = String(seconds % 60).padStart(2, '0');
+        document.getElementById('timerDisplay').textContent = `${min}:${sec}`;
+      }
+  
+
+
