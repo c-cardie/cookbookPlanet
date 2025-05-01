@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
+
+    <!--Font awsome for the timer icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,7 +26,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body id="entire-page">
     <div
       class="container-fluid text-center align-middle align-self-center"
       id="entire-page"
@@ -55,6 +59,10 @@
           id="navy"
         >
           <div class="container-fluid justify-content-center">
+                   
+            
+            
+            
             <a
               class="navbar-brand text-start invisible"
               href="../templates/index.html"
@@ -90,6 +98,17 @@
                 >
                   <span class="navbar-toggler-icon"></span>
                 </button>
+
+                       <!--Toggle dark mode-->
+                <button id="darkModeToggle" class="btn btn-sm btn-secondary ms-2">
+                  Toggle Dark Mode
+                </button> 
+                
+                <!--timer-->
+                <button onclick="openTimerTab()" class="btn btn-sm btn-secondary ms-2" title="Open Timer">
+                  <i class="fas fa-clock"></i>
+                </button>
+
                 <li class="nav-item none" id="nav-home">
                   <a class="nav-link" href="../templates/index.html">Home</a>
                 </li>

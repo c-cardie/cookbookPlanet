@@ -9,6 +9,11 @@
     <!--Adding the company logo to the page itself-->
     <link rel="icon" href="../made_photos/ck_moon.png" type="image/png">
     
+    <!--Font awsome for the timer icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
     <meta
       name="description"
       content="A cookbook catalog filled with recipes to satisfy any craving."
@@ -32,7 +37,7 @@
       }
     </style>
   </head>
-  <body onload="fetchRecipes()">
+  <body id="entire-page" onload="fetchRecipes()">
     <div
       class="container-fluid text-center align-middle align-self-center"
       id="entire-page"
@@ -64,6 +69,9 @@
           id="navy"
         >
           <div class="container-fluid justify-content-center">
+
+            
+            
             <a
               class="navbar-brand text-start invisible"
               href="/templates/index.html"
@@ -99,6 +107,16 @@
                 >
                   <span class="navbar-toggler-icon"></span>
                 </button>
+
+
+                <!--Toggle dark mode-->
+                <button id="darkModeToggle" class="btn btn-sm btn-secondary ms-2">
+                  Toggle Dark Mode
+                </button>
+                <button onclick="openTimerTab()" class="btn btn-sm ms-2 custom-timer-button" title="Open Timer">
+                    <i class="fas fa-clock"></i>
+                </button>
+
                 <li class="nav-item none" id="nav-home">
                   <a class="nav-link" href="../templates/index.html">Home</a>
                 </li>

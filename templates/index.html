@@ -12,6 +12,11 @@
     <!--Adding the company logo to the page itself-->
     <link rel="icon" href="../made_photos/ck_moon.png" type="image/png">
     
+
+    <!--Font awsome for the timer icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
     
     <meta
       name="description"
@@ -47,7 +52,7 @@
       }
     </style>
   </head>
-  <body onload="fetchRecipes()">
+  <body id="entire-page" onload="fetchRecipes()">
     <div
       class="container-fluid text-center align-middle align-self-center"
       id="entire-page"
@@ -80,6 +85,8 @@
           id="navy"
         >
           <div class="container-fluid justify-content-center">
+
+
             <a
               class="navbar-brand text-start invisible"
               href="/templates/index.html"
@@ -102,8 +109,13 @@
             >
               <ul
                 class="navbar-nav w-100 mb-2 mb-lg-0 justify-content-center"
-                id="nav-list"
-              >
+                id="nav-list">
+
+
+
+
+
+
                 <button
                   class="navbar-toggler invisible"
                   
@@ -112,43 +124,59 @@
                   data-bs-target="#navbarSupportedContent"
                   aria-controls="navbarSupportedContent"
                   aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
+                  aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <li class="nav-item none" id="nav-home" >
-                  <a class="nav-link" href="../templates/index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../templates/all_recipes.html"
-                    >Recipes</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../templates/favorites.html"
-                    >Favorites</a
-                  >
-                </li>
+                    <!--Toggle dark mode-->
+                    <button id="darkModeToggle" class="btn btn-sm btn-secondary ms-2">
+                      Toggle Dark Mode
+                    </button>
+                    <button onclick="openTimerTab()" class="btn btn-sm ms-2 custom-timer-button" title="Open Timer">
+                        <i class="fas fa-clock"></i>
+                    </button>
+
+
+                    <li class="nav-item none" id="nav-home" >
+                      <a class="nav-link" href="../templates/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../templates/all_recipes.html"
+                        >Recipes</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../templates/favorites.html"
+                        >Favorites</a
+                      >
+                    </li>
 
               </ul>
 
-              <!---->
-              <form class="d-flex ms-auto" onsubmit="redirectToSearch(event)">
-                <input
 
-                  type="text"
-                  id="searchInput"
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search ..."
-                  aria-label="Search"
-                />
+              
+              <div class="d-flex align-items-center">
+                <form class="d-flex" onsubmit="redirectToSearch(event)" style="max-width: 400px;">
+                  <input
+                    type="text"
+                    id="searchInput"
+                    class="form-control me-2"
+                    placeholder="Search ..."
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success" type="submit">
+                    Search
+                  </button>
+                </form>
 
-                
-                <button class="btn btn-outline-success" type="submit">
+
+              <!--
+                <button class="btn btn-outline-success ms-2">
                   Search
-                </button>
-              </form>
+                </button>-->
+              </div>
+              
+              
+              
             </div>
           </div>
         </nav>

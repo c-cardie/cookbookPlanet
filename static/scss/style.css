@@ -3,6 +3,83 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair Display');
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=Karla');
+
+/* === DARK MODE STYLES === */
+.dark-mode {
+  background-color: #1a1a1a !important;
+  color: #f0f0f0;
+}
+
+/**/.dark-mode #header,
+.dark-mode #entire-page {
+  background-color: #2a2a2a !important;
+}
+
+.dark-mode .card-body {
+  background-color: #333 !important;
+}
+
+
+/*nav bar */
+.dark-mode #nav-container,
+.dark-mode .navbar-light {
+  background-color: #a6b672 !important;
+}
+
+/*section for pdf books and footer*/
+.dark-mode #books,
+.dark-mode .footer {
+  background-color: #8e9b62 !important;
+}
+
+.dark-mode .card-title a,
+.dark-mode .mb-2.mt-4.p,
+
+/**/
+
+.dark-mode .nav-link,
+.dark-mode p,
+.dark-mode h2,
+.dark-mode h6 {
+  color: #f0f0f0 !important;
+}
+
+.dark-mode .btn.btn-outline-success {
+  color: #f0f0f0;
+  border-color: #f0f0f0;
+}
+
+.dark-mode .btn.btn-outline-success:hover {
+  background-color: #555;
+  color: #fff;
+  border-color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*this section is for the timer*/
+.custom-timer-button {
+  background-color: #FF6F61;
+  color: white;
+  border: none;
+}
+
+/**/
+.custom-timer-button:hover {
+  background-color: #e55b4d;
+}
+
+
+
 html {
   height: 100%;
 }
@@ -388,5 +465,8 @@ input.form-control::placeholder {
 
   
 }
+
+
+
 
 /*# sourceMappingURL=style.css.map */
