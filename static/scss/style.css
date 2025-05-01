@@ -33,7 +33,10 @@
 /*nav bar */
 .dark-mode #nav-container,
 .dark-mode .navbar-light,
-.dark-mode .btn.btn-primary {
+.dark-mode #navbarSupportedContent,
+.dark-mode #prev-btn,
+.dark-mode #next-btn,
+.dark-mode .btn.btn-primary  {
   background-color: #a6b672 !important;
 }
 
@@ -51,8 +54,15 @@
 .dark-mode .nav-link,
 .dark-mode p,
 .dark-mode h2,
-.dark-mode h6 {
+.dark-mode h6,
+.dark-mode #next-btn,
+.dark-mode #prev-btn,
+.dark-mode .pl-3 {
   color: #f0f0f0 !important;
+}
+
+.dark-mode .step-checkbox {
+  accent-color: #8e9b62 !important;
 }
 
 .dark-mode .btn.btn-outline-success {
@@ -129,14 +139,14 @@
 
 /*this section is for the timer*/
 .custom-timer-button {
-  background-color: #FF6F61;
+  background-color: #555;
   color: white;
   border: none;
 }
 
 /**/
 .custom-timer-button:hover {
-  background-color: #e55b4d;
+  background-color: #555;
 }
 
 
