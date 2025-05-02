@@ -16,6 +16,11 @@
   background-color: #2a2a2a !important;
 }
 
+/*timer background*/
+.dark-mode #floatingTimer {
+  background-color: #7e7e7e !important;
+}
+
 
 /*card darkener*/
 .dark-mode .card-body {
@@ -92,7 +97,7 @@
   position: fixed;
   bottom: 70px;
   right: 20px;
-  width: 250px;
+  width: 300px;
   background-color: #fff;
   border: 2px solid #41521F;
   border-radius: 10px;
@@ -100,6 +105,7 @@
   padding: 15px;
   z-index: 1000;
   display: none;
+  color:black !important;
 }
 
 .timer-header {
@@ -108,11 +114,13 @@
   align-items: center;
   font-weight: bold;
   margin-bottom: 10px;
+  color:black !important;
 }
 
 .timer-header button {
   background: transparent;
   border: none;
+  
   font-size: 20px;
   cursor: pointer;
 }
@@ -123,10 +131,12 @@
   margin-bottom: 10px;
   padding: 6px;
   font-size: 16px;
+  
 }
 
 #timerDisplay {
   text-align: center;
+  color:black !important;
   font-size: 24px;
   font-weight: bold;
 }

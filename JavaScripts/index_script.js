@@ -67,36 +67,42 @@
       };
 
       function startTimer() {
-        const minutes = parseInt(document.getElementById('timerMinutes').value);
-        if (isNaN(minutes) || minutes < 0) return;
-
-        let time = minutes * 60;
-        updateDisplay(time);
-
+        const hours = parseInt(document.getElementById('hours').value) || 0;
+        const minutes = parseInt(document.getElementById('minutes').value) || 0;
+        const seconds = parseInt(document.getElementById('seconds').value) || 0;
+      
+        let totalSeconds = hours * 3600 + minutes * 60 + seconds;
+        if (totalSeconds <= 0) return;
+      
+        updateDisplay(totalSeconds);
         clearInterval(countdown);
+      
         countdown = setInterval(() => {
-          time--;
-          updateDisplay(time);
-          if (time <= 0) {
+          totalSeconds--;
+          updateDisplay(totalSeconds);
+          if (totalSeconds <= 0) {
             clearInterval(countdown);
             alarmSound.loop = true;
             alarmSound.play();
           }
         }, 1000);
       }
+      
 
       function resetTimer() {
         clearInterval(countdown);
-        document.getElementById('timerDisplay').textContent = '00:00';
+        document.getElementById('timerDisplay').textContent = '00:00:00';
         alarmSound.pause();
         alarmSound.currentTime = 0;
       }
 
       function updateDisplay(seconds) {
-        const min = String(Math.floor(seconds / 60)).padStart(2, '0');
+        const hr = String(Math.floor(seconds / 3600)).padStart(2, '0');
+        const min = String(Math.floor((seconds % 3600) / 60)).padStart(2, '0');
         const sec = String(seconds % 60).padStart(2, '0');
-        document.getElementById('timerDisplay').textContent = `${min}:${sec}`;
+        document.getElementById('timerDisplay').textContent = `${hr}:${min}:${sec}`;
       }
+      
   
 
 

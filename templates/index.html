@@ -150,10 +150,17 @@
                         <button id="closeTimerBtn">&times;</button>
                       </div>
                       <div class="timer-body">
-                        <input type="number" id="timerMinutes" placeholder="Minutes" min="0">
+
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-lg-4"><label>Hrs: <input type="number" id="hours" min="0" value="0"></label></div>
+                            <div class="col-lg-4"><label>Min: <input type="number" id="minutes" min="0" max="59" value="0"></label></div>
+                            <div class="col-lg-4"><label>Sec: <input type="number" id="seconds" min="0" max="59" value="0"></label></div>
+                          </div>
+                        </div>               
                         <button onclick="startTimer()">Start</button>
                         <button onclick="resetTimer()">Reset</button>
-                        <div id="timerDisplay">00:00</div>
+                        <div id="timerDisplay">00:00:00</div>
                       </div>
                     </div>
 
