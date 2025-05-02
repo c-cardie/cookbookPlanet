@@ -1,3 +1,28 @@
+// sources: 
+// https://www.google.com/search?q=random+number+everyday+javascript&sca_esv=ad6373a997a56455&rlz=1CAMFAZ_enUS978US978&sxsrf=AHTn8zpef7y5RTj9iLYuG_Isxemohlsjiw%3A1746213744626&ei=cBsVaL2BJs2wptQP0auswQI&oq=random+number+everyday+java&gs_lp=Egxnd3Mtd2l6LXNlcnAiG3JhbmRvbSBudW1iZXIgZXZlcnlkYXkgamF2YSoCCAAyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FSJwUUO4BWPANcAF4AZABAJgBiwGgAeMEqgEDMC41uAEDyAEA-AEBmAIGoAKdBcICChAAGLADGNYEGEfCAgYQABgWGB7CAgsQABiABBiGAxiKBcICCBAAGIAEGKIEwgIIEAAYogQYiQXCAgUQABjvBZgDAIgGAZAGBpIHAzEuNaAHkzOyBwMwLjW4B5cF&sclient=gws-wiz-serp
+// https://stackoverflow.com/questions/521295/seeding-the-random-number-generator-in-javascript?utm_source=chatgpt.com
+// https://github.com/bryc/code/blob/master/jshash/PRNGs.md?utm_source=chatgpt.com
+// https://github.com/cprosche/mulberry32?utm_source=chatgpt.com
+function getRandomNumberDaily(min, max) {
+  const today = new Date();
+  const seed = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
+  const rng = mulberry32(seed);
+  return Math.floor(rng() * (max - min + 1)) + min;
+}
+
+function mulberry32(a) {
+  return function() {
+    let t = a += 0x6D2B79F5;
+    t = Math.imul(t ^ t >>> 15, t | 1);
+    t ^= t + Math.imul(t ^ t >>> 7, t | 61);
+    return ((t ^ t >>> 14) >>> 0) / 4294967296;
+  }
+}
+
+const min = 1;
+const max = 100;
+const randomNumber = getRandomNumberDaily(1, 80);
+
 //This  code loads the default homepage
       window.onload = function () {
           const params = new URLSearchParams(window.location.search);
@@ -8,7 +33,7 @@
           } else {
 
                 //This is where we get the recipe of the day:
-              fetchJSONAndDisplayObject(6);  // Load default content
+              fetchJSONAndDisplayObject(randomNumber);  // Load default content
           }
       }
 
