@@ -113,38 +113,6 @@
                 <button id="darkModeToggle" class="btn btn-sm btn-secondary ms-2">
                   Toggle Dark Mode
                 </button>
-                <!--Timer:
-
-                    <button onclick="openTimerTab()" class="btn btn-sm ms-2 custom-timer-button" title="Open Timer">
-                        <i class="fas fa-clock"></i>
-                    </button>-->
-
-                    <!-- Floating Timer Button -->
-                    <button id="openTimerBtn" class="btn btn-sm btn-success">
-                      <i class="fas fa-clock"></i> Timer
-                    </button>
-
-                    <!-- Timer Widget -->
-                    <div id="floatingTimer">
-                      <div class="timer-header">
-                        <span>⏱ Timer</span>
-                        <button id="closeTimerBtn">&times;</button>
-                      </div>
-                      <div class="timer-body">
-
-                        <div class="container">
-                          <div class="row">
-                            <div class="col-lg-4"><label>Hrs: <input type="number" id="hours" min="0" value="0"></label></div>
-                            <div class="col-lg-4"><label>Min: <input type="number" id="minutes" min="0" max="59" value="0"></label></div>
-                            <div class="col-lg-4"><label>Sec: <input type="number" id="seconds" min="0" max="59" value="0"></label></div>
-                          </div>
-                        </div>               
-                        <button onclick="startTimer()">Start</button>
-                        <button onclick="resetTimer()">Reset</button>
-                        <div id="timerDisplay">00:00:00</div>
-                      </div>
-                    </div>
-
                 <li class="nav-item none" id="nav-home">
                   <a class="nav-link" href="../templates/index.html">Home</a>
                 </li>
@@ -182,6 +150,34 @@
         </nav>
       </div>
 
+      <!--Timer:
+      <button onclick="openTimerTab()" class="btn btn-sm ms-2 custom-timer-button" title="Open Timer">
+          <i class="fas fa-clock"></i>
+      </button>-->
+      <!-- Floating Timer Button -->
+      <button id="openTimerBtn" class="btn btn-sm btn-success">
+        <i class="fas fa-clock"></i> Timer
+      </button>
+
+      <!-- Timer Widget -->
+      <div id="floatingTimer">
+        <div class="timer-header">
+          <span>⏱ Timer</span>
+          <button id="closeTimerBtn">&times;</button>
+        </div>
+        <div class="timer-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-4"><label>Hrs: <input type="number" id="hours" min="0" value="0"></label></div>
+              <div class="col-4"><label>Min: <input type="number" id="minutes" min="0" max="59" value="0"></label></div>
+              <div class="col-4"><label>Sec: <input type="number" id="seconds" min="0" max="59" value="0"></label></div>
+            </div>
+          </div>               
+          <button onclick="startTimer()">Start</button>
+          <button onclick="resetTimer()">Reset</button>
+          <div id="timerDisplay">00:00:00</div>
+        </div>
+      </div>
       
       <!--All recipes-->
       <!--This section loads all the recipes into 1 page-->
@@ -285,7 +281,6 @@
 
           closeTimerBtn.addEventListener("click", () => {
             floatingTimer.style.display = "none";
-            resetTimer(); // Ensure the timer is reset when closed
           });
         }
       });
