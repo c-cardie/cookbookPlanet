@@ -104,10 +104,37 @@
                   Toggle Dark Mode
                 </button> 
                 
-                <!--timer-->
-                <button onclick="openTimerTab()" class="btn btn-sm btn-secondary ms-2" title="Open Timer">
-                  <i class="fas fa-clock"></i>
-                </button>
+                <!--Timer:
+
+                    <button onclick="openTimerTab()" class="btn btn-sm ms-2 custom-timer-button" title="Open Timer">
+                        <i class="fas fa-clock"></i>
+                    </button>-->
+
+                    <!-- Floating Timer Button -->
+                    <button id="openTimerBtn" class="btn btn-sm btn-success">
+                      <i class="fas fa-clock"></i> Timer
+                    </button>
+
+                    <!-- Timer Widget -->
+                    <div id="floatingTimer">
+                      <div class="timer-header">
+                        <span>⏱ Timer</span>
+                        <button id="closeTimerBtn">&times;</button>
+                      </div>
+                      <div class="timer-body">
+
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-lg-4"><label>Hrs: <input type="number" id="hours" min="0" value="0"></label></div>
+                            <div class="col-lg-4"><label>Min: <input type="number" id="minutes" min="0" max="59" value="0"></label></div>
+                            <div class="col-lg-4"><label>Sec: <input type="number" id="seconds" min="0" max="59" value="0"></label></div>
+                          </div>
+                        </div>               
+                        <button onclick="startTimer()">Start</button>
+                        <button onclick="resetTimer()">Reset</button>
+                        <div id="timerDisplay">00:00:00</div>
+                      </div>
+                    </div>
 
                 <li class="nav-item none" id="nav-home">
                   <a class="nav-link" href="../templates/index.html">Home</a>
@@ -225,5 +252,64 @@
 
     <!---->
     <script src="../JavaScripts/recipe.js"></script>
+    <!--here is the link that makes the filter and search process-->
+    <script src="../JavaScripts/index_script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const openTimerBtn = document.getElementById("openTimerBtn");
+        const closeTimerBtn = document.getElementById("closeTimerBtn");
+        const floatingTimer = document.getElementById("floatingTimer");
+
+        if (openTimerBtn && closeTimerBtn && floatingTimer) {
+          openTimerBtn.addEventListener("click", () => {
+            floatingTimer.style.display = "block";
+          });
+
+          closeTimerBtn.addEventListener("click", () => {
+            floatingTimer.style.display = "none";
+            resetTimer(); // Ensure the timer is reset when closed
+          });
+        }
+      });
+
+      let countdown;
+      let alarmSound = new Audio("https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg");
+
+      function startTimer() {
+        const hours = parseInt(document.getElementById('hours').value) || 0;
+        const minutes = parseInt(document.getElementById('minutes').value) || 0;
+        const seconds = parseInt(document.getElementById('seconds').value) || 0;
+
+        let totalSeconds = hours * 3600 + minutes * 60 + seconds;
+        if (totalSeconds <= 0) return;
+
+        updateDisplay(totalSeconds);
+        clearInterval(countdown);
+
+        countdown = setInterval(() => {
+          totalSeconds--;
+          updateDisplay(totalSeconds);
+          if (totalSeconds <= 0) {
+            clearInterval(countdown);
+            alarmSound.loop = true;
+            alarmSound.play();
+          }
+        }, 1000);
+      }
+
+      function resetTimer() {
+        clearInterval(countdown);
+        document.getElementById('timerDisplay').textContent = '00:00:00';
+        alarmSound.pause();
+        alarmSound.currentTime = 0;
+      }
+
+      function updateDisplay(seconds) {
+        const hr = String(Math.floor(seconds / 3600)).padStart(2, '0');
+        const min = String(Math.floor((seconds % 3600) / 60)).padStart(2, '0');
+        const sec = String(seconds % 60).padStart(2, '0');
+        document.getElementById('timerDisplay').textContent = `${hr}:${min}:${sec}`;
+      }
+    </script>
   </body>
 </html>

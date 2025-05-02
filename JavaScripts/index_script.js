@@ -1,7 +1,4 @@
-
-      
-      
-      //This  code loads the default homepage
+//This  code loads the default homepage
       window.onload = function () {
           const params = new URLSearchParams(window.location.search);
           const query = params.get('query');
@@ -67,6 +64,7 @@
       };
 
       function startTimer() {
+        console.log("startTimer called"); // Debugging line
         const hours = parseInt(document.getElementById('hours').value) || 0;
         const minutes = parseInt(document.getElementById('minutes').value) || 0;
         const seconds = parseInt(document.getElementById('seconds').value) || 0;
@@ -102,7 +100,7 @@
         const sec = String(seconds % 60).padStart(2, '0');
         document.getElementById('timerDisplay').textContent = `${hr}:${min}:${sec}`;
       }
-      
-  
+
+
 
 

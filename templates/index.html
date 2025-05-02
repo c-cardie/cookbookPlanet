@@ -324,10 +324,21 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="../templates/script.js"></script>
-
-    <!--here is the link that makes the filter and search process-->
     <script src="../JavaScripts/index_script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const openTimerBtn = document.getElementById("openTimerBtn");
+        const closeTimerBtn = document.getElementById("closeTimerBtn");
+        const floatingTimer = document.getElementById("floatingTimer");
 
+        openTimerBtn.addEventListener("click", () => {
+          floatingTimer.style.display = "block";
+        });
+
+        closeTimerBtn.addEventListener("click", () => {
+          floatingTimer.style.display = "none";
+        });
+      });
+    </script>
   </body>
 </html>
