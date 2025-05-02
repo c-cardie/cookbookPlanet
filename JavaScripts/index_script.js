@@ -60,7 +60,6 @@
 
       document.getElementById('closeTimerBtn').onclick = () => {
         document.getElementById('floatingTimer').style.display = 'none';
-        resetTimer(); // stop timer and alarm
       };
 
       function startTimer() {
