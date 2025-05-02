@@ -370,6 +370,33 @@ function displayRecipesWithHighlight(recipes, query) {
           window.scrollTo({ top: 0, behavior: 'smooth' });
         }
       });
+
+
+            //this section is for toggling light and dark mode 
+            const toggleBtn = document.getElementById("darkModeToggle");
+            const page = document.getElementById("entire-page");
+          
+            // Load preference from localStorage
+            if (localStorage.getItem("darkMode") === "true") {
+              page.classList.add("dark-mode");
+            }
+          
+            toggleBtn.addEventListener("click", () => {
+              page.classList.toggle("dark-mode");
+          
+              // Save preference
+              const isDark = page.classList.contains("dark-mode");
+              localStorage.setItem("darkMode", isDark);
+            });
+            
+      //for the timerj
+      function openTimerTab() {
+        window.open(
+          'timer.html', // or whatever your timer page URL is
+          'TimerWindow',
+          'width=450,height=425,left=100,top=100,resizable=yes,scrollbars=no'
+        );
+      }            
       
 
 

@@ -3,6 +3,164 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair Display');
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=Karla');
+
+/* === DARK MODE STYLES === */
+.dark-mode {
+  background-color: #1a1a1a !important;
+  color: #f0f0f0;
+}
+
+
+/**/.dark-mode #header,
+.dark-mode #entire-page {
+  background-color: #2a2a2a !important;
+}
+
+/*timer background*/
+.dark-mode #floatingTimer {
+  background-color: #7e7e7e !important;
+}
+
+
+/*card darkener*/
+.dark-mode .card-body {
+  background-color: #54785b !important;
+}
+
+/*card text darkener*/
+.dark-mode .card-body text-left,
+.dark-mode #list_steps {
+  background-color: #f0f0f0 !important;
+}
+
+
+
+/*nav bar */
+.dark-mode #nav-container,
+.dark-mode .navbar-light,
+.dark-mode #navbarSupportedContent,
+.dark-mode #prev-btn,
+.dark-mode #next-btn,
+.dark-mode .btn.btn-primary  {
+  background-color: #a6b672 !important;
+}
+
+/*section for pdf books and footer*/
+.dark-mode #books,
+.dark-mode .footer {
+  background-color: #8e9b62 !important;
+}
+
+.dark-mode .card-title a,
+.dark-mode .mb-2.mt-4.p,
+
+/**/
+
+.dark-mode .nav-link,
+.dark-mode p,
+.dark-mode h2,
+.dark-mode h6,
+.dark-mode #next-btn,
+.dark-mode #prev-btn,
+.dark-mode .pl-3 {
+  color: #f0f0f0 !important;
+}
+
+.dark-mode .step-checkbox {
+  accent-color: #8e9b62 !important;
+}
+
+.dark-mode .btn.btn-outline-success {
+  color: #f0f0f0;
+  border-color: #f0f0f0;
+}
+
+.dark-mode .btn.btn-outline-success:hover {
+  background-color: #555;
+  color: #fff;
+  border-color: #ccc;
+}
+
+
+
+
+
+/*===========This section is for the timer======================*/
+#openTimerBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+#floatingTimer {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  width: 300px;
+  background-color: #fff;
+  border: 2px solid #41521F;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: 15px;
+  z-index: 1000;
+  display: none;
+  color:black !important;
+}
+
+.timer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color:black !important;
+}
+
+.timer-header button {
+  background: transparent;
+  border: none;
+  
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.timer-body input,
+.timer-body button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 6px;
+  font-size: 16px;
+  
+}
+
+#timerDisplay {
+  text-align: center;
+  color:black !important;
+  font-size: 24px;
+  font-weight: bold;
+}
+/*=================================================*/
+
+
+
+
+
+
+/*this section is for the timer*/
+.custom-timer-button {
+  background-color: #555;
+  color: white;
+  border: none;
+}
+
+/**/
+.custom-timer-button:hover {
+  background-color: #555;
+}
+
+
+
 html {
   height: 100%;
 }
@@ -388,5 +546,8 @@ input.form-control::placeholder {
 
   
 }
+
+
+
 
 /*# sourceMappingURL=style.css.map */

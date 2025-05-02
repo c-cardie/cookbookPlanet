@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--favicon for the timer. the image was downloaded from icons8.com-->
+<link rel="icon" href="../made_photos/icons8-timer-50.png" type="image/png">
+
+  <meta charset="UTF-8">
+  <title>Timer</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: sans-serif;
+      background: #f0f0f0;
+    }
+
+    canvas {
+      border: 2px solid #333;
+      border-radius: 50%;
+      margin-top: 50px;
+      cursor: pointer;
+    }
+
+    #info {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!--<h1>Analog Timer</h1>-->
+  <canvas id="timerCanvas" width="300" height="300"></canvas>
+  <div id="info">Scroll to set time. Click to start.</div>
+  <!--reset button-->
+  <button id="resetBtn">Reset</button>
+
+  <!--alarm sound-->
+  <audio id="alarmSound" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" preload="auto" loop></audio>
+
+
+  <script>
+
+    //reset button
+    resetBtn.addEventListener('click', () => {
+    clearInterval(interval);
+    minutes = 0;
+    seconds = 0;
+    running = false;
+    drawTimer(0, 0);
+
+    const alarm = document.getElementById('alarmSound');
+    alarm.pause();
+    alarm.currentTime = 0;
+    });
+
+
+
+    const canvas = document.getElementById('timerCanvas');
+    const ctx = canvas.getContext('2d');
+    const radius = canvas.width / 2;
+    let minutes = 0;
+    let seconds = 0;
+    let running = false;
+    let interval;
+
+    canvas.addEventListener('wheel', (e) => {
+      if (running) return;
+      e.preventDefault();
+      const delta = Math.sign(e.deltaY); // 1 or -1
+      minutes = Math.max(0, minutes - delta);
+      drawTimer(minutes, 0);
+    });
+
+    canvas.addEventListener('click', () => {
+      if (running || minutes === 0) return;
+      seconds = minutes * 60;
+      running = true;
+      interval = setInterval(() => {
+        seconds--;
+        drawTimer(0, seconds);
+        if (seconds <= 0) {
+          clearInterval(interval);
+          running = false;
+
+            //timer
+            const alarm = document.getElementById('alarmSound');
+            alarm.play();
+
+
+
+
+          
+        }
+
+      },1000);
+    });
+
+    function drawTimer(mins, secs) {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      ctx.save();
+      ctx.translate(radius, radius);
+
+      // Draw outer circle
+      ctx.beginPath();
+      ctx.arc(0, 0, radius - 5, 0, 2 * Math.PI);
+      ctx.strokeStyle = '#333';
+      ctx.lineWidth = 5;
+      ctx.stroke();
+
+      // Draw clock ticks
+      for (let i = 0; i < 60; i++) {
+        const angle = i * Math.PI / 30;
+        const x1 = (radius - 10) * Math.cos(angle);
+        const y1 = (radius - 10) * Math.sin(angle);
+        const x2 = (radius - 20) * Math.cos(angle);
+        const y2 = (radius - 20) * Math.sin(angle);
+        ctx.beginPath();
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        ctx.strokeStyle = i % 5 === 0 ? '#000' : '#999';
+        ctx.lineWidth = i % 5 === 0 ? 2 : 1;
+        ctx.stroke();
+      }
+
+      // Draw minute hand
+      const time = secs || mins * 60;
+      const angle = (time / 60) * (2 * Math.PI / 60); // seconds to angle
+      ctx.beginPath();
+      ctx.moveTo(0, 0);
+      ctx.lineTo((radius - 40) * Math.cos(-Math.PI / 2 + angle), (radius - 40) * Math.sin(-Math.PI / 2 + angle));
+      ctx.strokeStyle = '#e91e63';
+      ctx.lineWidth = 4;
+      ctx.stroke();
+
+      // Draw text
+      ctx.font = "24px sans-serif";
+      ctx.fillStyle = "#333";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      const displayMin = Math.floor(time / 60);
+      const displaySec = time % 60;
+      ctx.fillText(`${String(displayMin).padStart(2, '0')}:${String(displaySec).padStart(2, '0')}`, 0, 0);
+
+      ctx.restore();
+    }
+
+    drawTimer(0, 0);
+  </script>
+</body>
+</html>
